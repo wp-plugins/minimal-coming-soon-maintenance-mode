@@ -1,0 +1,510 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Coming Soon & Maintenance Mode\n"
+"POT-Creation-Date: 2014-07-29 04:32+0530\n"
+"PO-Revision-Date: 2014-07-29 04:32+0530\n"
+"Last-Translator: 69signals <ping@69signals.com>\n"
+"Language-Team: 69signals <ping@69signals.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: library/templates/elegant/html.php:15 library/templates/naked/html.php:15
+#: library/templates/simply/html.php:15
+msgid "Maintainance Mode"
+msgstr ""
+
+#: library/templates/elegant/html.php:20 library/templates/naked/html.php:20
+#: library/templates/simply/html.php:20
+msgid "Maintainance Mode."
+msgstr ""
+
+#: library/templates/elegant/html.php:24 library/templates/naked/html.php:24
+#: library/templates/simply/html.php:24
+msgid ""
+"We are performing scheduled maintenance task on our servers because of which "
+"the website will be unavailable. In the meantime, you can subscribe to our "
+"mailing list and get notified about our important events."
+msgstr ""
+
+#: library/templates/elegant/html.php:122 library/templates/naked/html.php:126
+#: library/templates/simply/html.php:124
+msgid "Please provide your email address."
+msgstr ""
+
+#: library/templates/elegant/html.php:140 library/templates/naked/html.php:144
+#: library/templates/simply/html.php:142
+msgid "Oops! Something went wrong."
+msgstr ""
+
+#: library/templates/elegant/html.php:143 library/templates/naked/html.php:147
+#: library/templates/simply/html.php:145
+msgid "You are already subscribed!"
+msgstr ""
+
+#: library/templates/elegant/html.php:146 library/templates/naked/html.php:150
+#: library/templates/simply/html.php:148
+msgid "Thank you! We'll be in touch!"
+msgstr ""
+
+#: library/templates/elegant/html.php:150 library/templates/naked/html.php:154
+#: library/templates/simply/html.php:152
+msgid "Please provide a valid email address."
+msgstr ""
+
+#: library/templates/elegant/html.php:168 library/templates/naked/html.php:172
+#: library/templates/simply/html.php:170
+msgid "Enter your email here"
+msgstr ""
+
+#: library/templates/elegant/html.php:169 library/templates/naked/html.php:173
+#: library/templates/simply/html.php:171
+msgid "Subscribe Me"
+msgstr ""
+
+#: library/views/panel.php:5
+msgid "WordPress Maintenance Mode"
+msgstr ""
+
+#: library/views/panel.php:5
+msgid "by"
+msgstr ""
+
+#: library/views/panel.php:5
+msgid "69signals"
+msgstr ""
+
+#: library/views/panel.php:31
+msgid "Basic"
+msgstr ""
+
+#: library/views/panel.php:34
+msgid "Email"
+msgstr ""
+
+#: library/views/panel.php:37
+msgid "Design"
+msgstr ""
+
+#: library/views/panel.php:40
+msgid "Advanced"
+msgstr ""
+
+#: library/views/panel.php:43
+msgid "Support"
+msgstr ""
+
+#: library/views/panel.php:46
+msgid "Information"
+msgstr ""
+
+#: library/views/panel.php:54
+msgid "BASIC"
+msgstr ""
+
+#: library/views/panel.php:56
+msgid ""
+"Configure the core settings for the plugin. These are the most important "
+"options. So, make sure you configure them carefully."
+msgstr ""
+
+#: library/views/panel.php:60
+msgid "Enable Maintenance Mode?"
+msgstr ""
+
+#: library/views/panel.php:63
+msgid ""
+"Select the status for the plugin. Do you want to enable Maintenance Mode for "
+"your website?"
+msgstr ""
+
+#: library/views/panel.php:67
+msgid "Select Template"
+msgstr ""
+
+#: library/views/panel.php:70
+msgid "Simply"
+msgstr ""
+
+#: library/views/panel.php:71
+msgid "Naked"
+msgstr ""
+
+#: library/views/panel.php:72
+msgid "Elegant"
+msgstr ""
+
+#: library/views/panel.php:75
+msgid ""
+"Select the template for the plugin. This is shown to your website visitors "
+"when the plugin is activated."
+msgstr ""
+
+#: library/views/panel.php:79
+msgid "Page Title"
+msgstr ""
+
+#: library/views/panel.php:80
+msgid "Please provide a Page Title"
+msgstr ""
+
+#: library/views/panel.php:82
+msgid "Provide title for the maintenance page."
+msgstr ""
+
+#: library/views/panel.php:86
+msgid "Header Text"
+msgstr ""
+
+#: library/views/panel.php:89
+msgid ""
+"Provide header text for the plugin over here. If you leave this blank, "
+"default text will be used which is not recommended."
+msgstr ""
+
+#: library/views/panel.php:93
+msgid "Secondary Text"
+msgstr ""
+
+#: library/views/panel.php:96
+msgid ""
+"Provide secondary text for the plugin over here. If you leave this blank, "
+"default text will be used which is not recommended."
+msgstr ""
+
+#: library/views/panel.php:100
+msgid "Exclude Search Engines?"
+msgstr ""
+
+#: library/views/panel.php:103
+msgid ""
+"Do you want to exclude search engines from viewing this plugin? This will "
+"enable search engines to view your website rather than the Maintenance Mode "
+"page when the plugin is enabled."
+msgstr ""
+
+#: library/views/panel.php:111
+msgid "EMAIL"
+msgstr ""
+
+#: library/views/panel.php:113
+msgid ""
+"Email settings for the plugin. You can configure your MailChimp account API "
+"with this plugin to store collected emails in an list."
+msgstr ""
+
+#: library/views/panel.php:117 library/views/panel.php:118
+msgid "MailChimp API"
+msgstr ""
+
+#: library/views/panel.php:120
+msgid "Provide your MailChimp API over here."
+msgstr ""
+
+#: library/views/panel.php:120
+msgid "Click here"
+msgstr ""
+
+#: library/views/panel.php:120
+msgid ""
+"to know how to get this information. In case you don't want to enable "
+"subscription option, just leave this field blank."
+msgstr ""
+
+#: library/views/panel.php:124
+msgid "MailChimp List"
+msgstr ""
+
+#: library/views/panel.php:139
+msgid ""
+"There was an error communicating with the MailChimp server. Please make sure "
+"that the API Key used is correct and try again."
+msgstr ""
+
+#: library/views/panel.php:141
+msgid ""
+"It seems that there is no list created for this account. Why not create one "
+"on the MailChimp website and then try here."
+msgstr ""
+
+#: library/views/panel.php:151
+msgid ""
+"Select your MailChimp list in which you would like to store the subscribers "
+"data."
+msgstr ""
+
+#: library/views/panel.php:154
+msgid ""
+"Provide your MailChimp API key in the above box and click on `Save Changes` "
+"option. Your lists will appear over here."
+msgstr ""
+
+#: library/views/panel.php:165
+msgid "DESIGN"
+msgstr ""
+
+#: library/views/panel.php:167
+msgid ""
+"Design settings for the plugin. You have the option to modify every aspect "
+"of the design so that it matches the look and feel of your website."
+msgstr ""
+
+#: library/views/panel.php:171
+msgid "Ignore Default Template Styles"
+msgstr ""
+
+#: library/views/panel.php:174
+msgid ""
+"Turn ON this option if you want to ignore default template styling and use "
+"your custom design scheme from below."
+msgstr ""
+
+#: library/views/panel.php:178
+msgid "Backgorund Cover Image"
+msgstr ""
+
+#: library/views/panel.php:179
+msgid "Enter an image URL or upload using the button below"
+msgstr ""
+
+#: library/views/panel.php:180
+msgid "Upload Image"
+msgstr ""
+
+#: library/views/panel.php:182
+msgid "Select or upload background cover image for the page."
+msgstr ""
+
+#: library/views/panel.php:186
+msgid "Backgorund Color"
+msgstr ""
+
+#: library/views/panel.php:187
+msgid "Background color for the page"
+msgstr ""
+
+#: library/views/panel.php:189
+msgid ""
+"Select background color for the page. Leave it untouched to use the default "
+"layout. If the background cover is set, this option will be ignored."
+msgstr ""
+
+#: library/views/panel.php:193
+msgid "Header Font"
+msgstr ""
+
+#: library/views/panel.php:196 library/views/panel.php:247
+msgid "Arial"
+msgstr ""
+
+#: library/views/panel.php:197 library/views/panel.php:248
+msgid "Helvetica"
+msgstr ""
+
+#: library/views/panel.php:198 library/views/panel.php:249
+msgid "Georgia"
+msgstr ""
+
+#: library/views/panel.php:199 library/views/panel.php:250
+msgid "Times New Roman"
+msgstr ""
+
+#: library/views/panel.php:200 library/views/panel.php:251
+msgid "Tahoma"
+msgstr ""
+
+#: library/views/panel.php:201 library/views/panel.php:252
+msgid "Verdana"
+msgstr ""
+
+#: library/views/panel.php:202 library/views/panel.php:253
+msgid "Geneva"
+msgstr ""
+
+#: library/views/panel.php:214 library/views/panel.php:265
+msgid "This is how this font is going to look!"
+msgstr ""
+
+#: library/views/panel.php:216
+msgid "Font for the header text. Listing a total of 668 Google web fonts."
+msgstr ""
+
+#: library/views/panel.php:220
+msgid "Header Font Size"
+msgstr ""
+
+#: library/views/panel.php:227 library/views/panel.php:278
+msgid "px"
+msgstr ""
+
+#: library/views/panel.php:233
+msgid "Font size for the header text. Select the one as per your preference."
+msgstr ""
+
+#: library/views/panel.php:237
+msgid "Header Font Color"
+msgstr ""
+
+#: library/views/panel.php:238
+msgid "Font color for the Header text"
+msgstr ""
+
+#: library/views/panel.php:240
+msgid ""
+"Select font color for the header text. To use the default colors of the "
+"theme, leave it untouched."
+msgstr ""
+
+#: library/views/panel.php:244
+msgid "Secondary Font"
+msgstr ""
+
+#: library/views/panel.php:267
+msgid "Font for the secondary text. Listing a total of 668 Google web fonts."
+msgstr ""
+
+#: library/views/panel.php:271
+msgid "Secondary Font Size"
+msgstr ""
+
+#: library/views/panel.php:284
+msgid ""
+"Font size for the secondary text. Select the one as per your preference."
+msgstr ""
+
+#: library/views/panel.php:288
+msgid "Secondary Font Color"
+msgstr ""
+
+#: library/views/panel.php:289
+msgid "Font color for the Secondary text"
+msgstr ""
+
+#: library/views/panel.php:291
+msgid ""
+"Select font color for the secondary text. To use the default colors of the "
+"theme, leave it untouched."
+msgstr ""
+
+#: library/views/panel.php:299
+msgid "ADVANCED"
+msgstr ""
+
+#: library/views/panel.php:301
+msgid ""
+"You can add custom HTML & CSS in this section. Making wrong changes over "
+"here will affect the working of the plugin."
+msgstr ""
+
+#: library/views/panel.php:305
+msgid "Use Custom HTML & CSS only"
+msgstr ""
+
+#: library/views/panel.php:308
+msgid ""
+"If you enable this option, the plugin will ignore everything except the HTML "
+"& CSS you provide. So, use this option carefully."
+msgstr ""
+
+#: library/views/panel.php:312
+msgid "Custom HTML"
+msgstr ""
+
+#: library/views/panel.php:316
+msgid "Custom HTML for the plugin goes over here. Please note that "
+msgstr ""
+
+#: library/views/panel.php:316
+msgid "[html], [head], [title], [meta], [body], and few other tags"
+msgstr ""
+
+#: library/views/panel.php:316
+msgid " gets filtered. Only provide content HTML for the page."
+msgstr ""
+
+#: library/views/panel.php:320
+msgid "Custom CSS"
+msgstr ""
+
+#: library/views/panel.php:324
+msgid "Custom CSS for the plugin goes over here."
+msgstr ""
+
+#: library/views/panel.php:332
+msgid "SUPPORT"
+msgstr ""
+
+#: library/views/panel.php:334
+msgid ""
+"Getting help is just a click away now. Report issue using the form below and "
+"we will get back to you at your admin email address. If the below support "
+"form is not working for you, kindly send us an email at "
+msgstr ""
+
+#: library/views/panel.php:334
+msgid " explaining the issue you are facing with the plugin."
+msgstr ""
+
+#: library/views/panel.php:340
+msgid "Email Address"
+msgstr ""
+
+#: library/views/panel.php:341
+msgid "Please provide your email address"
+msgstr ""
+
+#: library/views/panel.php:343
+msgid "You will receive support response at this email address."
+msgstr ""
+
+#: library/views/panel.php:347
+msgid "Issue / Feedback"
+msgstr ""
+
+#: library/views/panel.php:350
+msgid ""
+"Please explain the issue you are facing with the plugin. Provide as much "
+"detail as possible."
+msgstr ""
+
+#: library/views/panel.php:353
+msgid "Ask for Support"
+msgstr ""
+
+#: library/views/panel.php:360
+msgid "INFORMATION"
+msgstr ""
+
+#: library/views/panel.php:362
+msgid ""
+"Know more about this plugin, about us and what more we have for you. If you "
+"love this plugin, then please like us on social media."
+msgstr ""
+
+#: library/views/panel.php:374
+msgid "BLOG"
+msgstr ""
+
+#: library/views/panel.php:375
+msgid ""
+"This blog is dedicated to design, coding, jquery, entrepreneurship, and a "
+"little bit here & there to make you do stuff the right way."
+msgstr ""
+
+#: library/views/panel.php:411
+msgid "Save Changes"
+msgstr ""
+
+#: maintenance-mode.php:119
+msgid "Coming Soon & Maintenance Mode"
+msgstr ""
+
+#: maintenance-mode.php:120
+msgid "Maintenance Mode"
+msgstr ""
