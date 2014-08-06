@@ -4,7 +4,7 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.1
+ * @version 0.2
  */
 
 function csSignalsAdminSettings() {
@@ -32,6 +32,13 @@ function csSignalsAdminSettings() {
 			$signals_csmm_disable = absint ($_POST['signals_CSMM_disable']);
 		} else {
 			$signals_csmm_disable = 2;
+		}
+
+		// Checking whether the user logged in option is checked or not.
+		if (isset ($_POST['signals_CSMM_showLogged'])) {
+			$signals_csmm_logged = absint ($_POST['signals_CSMM_showLogged']);
+		} else {
+			$signals_csmm_logged = 2;
 		}
 
 		// Checking whether the search engine exclusion option is checked or not.
@@ -72,6 +79,7 @@ function csSignalsAdminSettings() {
 			'title' 				=> csSignalsCleanInput ($_POST['signals_CSMM_title']),
 			'header_text' 			=> csSignalsCleanInput ($_POST['signals_CSMM_header']),
 			'secondary_text' 		=> csSignalsCleanInput ($_POST['signals_CSMM_secondary']),
+			'show_logged_in' 		=> $signals_csmm_logged,
 			'exclude_se'			=> $signals_csmm_exclude,
 			'mailchimp_api'			=> csSignalsCleanInput ($_POST['signals_CSMM_api']),
 			'mailchimp_list' 		=> $signals_csmm_list,

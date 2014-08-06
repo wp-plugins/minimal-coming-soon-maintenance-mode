@@ -1,3 +1,13 @@
+<?php
+/**
+ * Template for the options panel.
+ * @package WordPress
+ * @subpackage CSMM
+ * @since 0.1
+ * @version 0.2
+ */
+?>
+
 <div class="Signals_Cnt_Fix">
 	<div class="Signals_Fix_WP38">
 		<div class="Signals_Header Signals_Clearfix">
@@ -52,7 +62,6 @@
 					<div class="Signals_Tile" id="basic">
 						<div class="Signals_Tile_Body">
 							<div class="Signals_Tile_Title"><?php _e('BASIC', 'signals'); ?></div>
-
 							<p><?php _e('Configure the core settings for the plugin. These are the most important options. So, make sure you configure them carefully.', 'signals'); ?></p>
 
 							<div class="Signals_CSMM_Section_Content">
@@ -97,6 +106,13 @@
 								</div>
 
 								<div class="Signals_Form_Group">
+									<label for="signals_CSMM_showLogged" class="Signals_CSMM_Strong"><?php _e('Show normal website to logged in users?', 'signals'); ?></label>
+									<input type="checkbox" class="Signals_Form_Ios" name="signals_CSMM_showLogged" value="1"<?php checked ('1', $signals_csmm_options['show_logged_in']); ?>>
+
+									<p class="Signals_Form_Help_Block"><?php _e('Enable this option if you want logged in users to view the website normally while visitors see the maintenance page.', 'signals'); ?></p>
+								</div>
+
+								<div class="Signals_Form_Group">
 									<label for="signals_CSMM_excludeSE" class="Signals_CSMM_Strong"><?php _e('Exclude Search Engines?', 'signals'); ?></label>
 									<input type="checkbox" class="Signals_Form_Ios" name="signals_CSMM_excludeSE" value="1"<?php checked ('1', $signals_csmm_options['exclude_se']); ?>>
 
@@ -109,7 +125,6 @@
 					<div class="Signals_Tile" id="email">
 						<div class="Signals_Tile_Body">
 							<div class="Signals_Tile_Title"><?php _e('EMAIL', 'signals'); ?></div>
-
 							<p><?php _e('Email settings for the plugin. You can configure your MailChimp account API with this plugin to store collected emails in an list.', 'signals'); ?></p>
 
 							<div class="Signals_CSMM_Section_Content">
@@ -163,7 +178,6 @@
 					<div class="Signals_Tile" id="design">
 						<div class="Signals_Tile_Body">
 							<div class="Signals_Tile_Title"><?php _e('DESIGN', 'signals'); ?></div>
-
 							<p><?php _e('Design settings for the plugin. You have the option to modify every aspect of the design so that it matches the look and feel of your website.', 'signals'); ?></p>
 
 							<div class="Signals_CSMM_Section_Content">
@@ -297,7 +311,6 @@
 					<div class="Signals_Tile" id="advanced">
 						<div class="Signals_Tile_Body">
 							<div class="Signals_Tile_Title"><?php _e('ADVANCED', 'signals'); ?></div>
-
 							<p><?php _e('You can add custom HTML & CSS in this section. Making wrong changes over here will affect the working of the plugin.', 'signals'); ?></p>
 
 							<div class="Signals_CSMM_Section_Content">
@@ -330,7 +343,6 @@
 					<div class="Signals_Tile" id="support">
 						<div class="Signals_Tile_Body">
 							<div class="Signals_Tile_Title"><?php _e('SUPPORT', 'signals'); ?></div>
-
 							<p><?php _e('Getting help is just a click away now. Report issue using the form below and we will get back to you at your admin email address. If the below support form is not working for you, kindly send us an email at ', 'signals'); ?><a href="mailto:support@69signals.com">support@69signals.com</a><?php _e(' explaining the issue you are facing with the plugin.', 'signals'); ?></p>
 
 							<div class="Signals_CSMM_Section_Content Signals_Support_Form">

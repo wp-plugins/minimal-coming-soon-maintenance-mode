@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress Coming Soon & Maintenance Mode\n"
-"POT-Creation-Date: 2014-07-29 04:32+0530\n"
-"PO-Revision-Date: 2014-07-29 04:32+0530\n"
+"Project-Id-Version: Minimal Coming Soon & Maintenance Mode\n"
+"POT-Creation-Date: 2014-08-07 00:20+0530\n"
+"PO-Revision-Date: 2014-08-07 00:20+0530\n"
 "Last-Translator: 69signals <ping@69signals.com>\n"
 "Language-Team: 69signals <ping@69signals.com>\n"
 "Language: en_US\n"
@@ -68,443 +68,457 @@ msgstr ""
 msgid "Subscribe Me"
 msgstr ""
 
-#: library/views/panel.php:5
-msgid "WordPress Maintenance Mode"
+#: library/views/panel.php:15
+msgid "Minimal Maintenance Mode"
 msgstr ""
 
-#: library/views/panel.php:5
+#: library/views/panel.php:15
 msgid "by"
 msgstr ""
 
-#: library/views/panel.php:5
+#: library/views/panel.php:15
 msgid "69signals"
 msgstr ""
 
-#: library/views/panel.php:31
+#: library/views/panel.php:41
 msgid "Basic"
 msgstr ""
 
-#: library/views/panel.php:34
+#: library/views/panel.php:44
 msgid "Email"
 msgstr ""
 
-#: library/views/panel.php:37
+#: library/views/panel.php:47
 msgid "Design"
 msgstr ""
 
-#: library/views/panel.php:40
+#: library/views/panel.php:50
 msgid "Advanced"
 msgstr ""
 
-#: library/views/panel.php:43
+#: library/views/panel.php:53
 msgid "Support"
 msgstr ""
 
-#: library/views/panel.php:46
+#: library/views/panel.php:56
 msgid "Information"
 msgstr ""
 
-#: library/views/panel.php:54
+#: library/views/panel.php:64
 msgid "BASIC"
 msgstr ""
 
-#: library/views/panel.php:56
+#: library/views/panel.php:65
 msgid ""
 "Configure the core settings for the plugin. These are the most important "
 "options. So, make sure you configure them carefully."
 msgstr ""
 
-#: library/views/panel.php:60
+#: library/views/panel.php:69
 msgid "Enable Maintenance Mode?"
 msgstr ""
 
-#: library/views/panel.php:63
+#: library/views/panel.php:72
 msgid ""
 "Select the status for the plugin. Do you want to enable Maintenance Mode for "
 "your website?"
 msgstr ""
 
-#: library/views/panel.php:67
+#: library/views/panel.php:76
 msgid "Select Template"
 msgstr ""
 
-#: library/views/panel.php:70
+#: library/views/panel.php:79
 msgid "Simply"
 msgstr ""
 
-#: library/views/panel.php:71
+#: library/views/panel.php:80
 msgid "Naked"
 msgstr ""
 
-#: library/views/panel.php:72
+#: library/views/panel.php:81
 msgid "Elegant"
 msgstr ""
 
-#: library/views/panel.php:75
+#: library/views/panel.php:84
 msgid ""
 "Select the template for the plugin. This is shown to your website visitors "
 "when the plugin is activated."
 msgstr ""
 
-#: library/views/panel.php:79
+#: library/views/panel.php:88
 msgid "Page Title"
 msgstr ""
 
-#: library/views/panel.php:80
+#: library/views/panel.php:89
 msgid "Please provide a Page Title"
 msgstr ""
 
-#: library/views/panel.php:82
+#: library/views/panel.php:91
 msgid "Provide title for the maintenance page."
 msgstr ""
 
-#: library/views/panel.php:86
+#: library/views/panel.php:95
 msgid "Header Text"
 msgstr ""
 
-#: library/views/panel.php:89
+#: library/views/panel.php:98
 msgid ""
 "Provide header text for the plugin over here. If you leave this blank, "
 "default text will be used which is not recommended."
 msgstr ""
 
-#: library/views/panel.php:93
+#: library/views/panel.php:102
 msgid "Secondary Text"
 msgstr ""
 
-#: library/views/panel.php:96
+#: library/views/panel.php:105
 msgid ""
 "Provide secondary text for the plugin over here. If you leave this blank, "
 "default text will be used which is not recommended."
 msgstr ""
 
-#: library/views/panel.php:100
+#: library/views/panel.php:109
+msgid "Show normal website to logged in users?"
+msgstr ""
+
+#: library/views/panel.php:112
+msgid ""
+"Enable this option if you want logged in users to view the website normally "
+"while visitors see the maintenance page."
+msgstr ""
+
+#: library/views/panel.php:116
 msgid "Exclude Search Engines?"
 msgstr ""
 
-#: library/views/panel.php:103
+#: library/views/panel.php:119
 msgid ""
 "Do you want to exclude search engines from viewing this plugin? This will "
 "enable search engines to view your website rather than the Maintenance Mode "
 "page when the plugin is enabled."
 msgstr ""
 
-#: library/views/panel.php:111
+#: library/views/panel.php:127
 msgid "EMAIL"
 msgstr ""
 
-#: library/views/panel.php:113
+#: library/views/panel.php:128
 msgid ""
 "Email settings for the plugin. You can configure your MailChimp account API "
 "with this plugin to store collected emails in an list."
 msgstr ""
 
-#: library/views/panel.php:117 library/views/panel.php:118
+#: library/views/panel.php:132 library/views/panel.php:133
 msgid "MailChimp API"
 msgstr ""
 
-#: library/views/panel.php:120
+#: library/views/panel.php:135
 msgid "Provide your MailChimp API over here."
 msgstr ""
 
-#: library/views/panel.php:120
+#: library/views/panel.php:135
 msgid "Click here"
 msgstr ""
 
-#: library/views/panel.php:120
+#: library/views/panel.php:135
 msgid ""
 "to know how to get this information. In case you don't want to enable "
 "subscription option, just leave this field blank."
 msgstr ""
 
-#: library/views/panel.php:124
+#: library/views/panel.php:139
 msgid "MailChimp List"
 msgstr ""
 
-#: library/views/panel.php:139
+#: library/views/panel.php:154
 msgid ""
 "There was an error communicating with the MailChimp server. Please make sure "
 "that the API Key used is correct and try again."
 msgstr ""
 
-#: library/views/panel.php:141
+#: library/views/panel.php:156
 msgid ""
 "It seems that there is no list created for this account. Why not create one "
 "on the MailChimp website and then try here."
 msgstr ""
 
-#: library/views/panel.php:151
+#: library/views/panel.php:166
 msgid ""
 "Select your MailChimp list in which you would like to store the subscribers "
 "data."
 msgstr ""
 
-#: library/views/panel.php:154
+#: library/views/panel.php:169
 msgid ""
 "Provide your MailChimp API key in the above box and click on `Save Changes` "
 "option. Your lists will appear over here."
 msgstr ""
 
-#: library/views/panel.php:165
+#: library/views/panel.php:180
 msgid "DESIGN"
 msgstr ""
 
-#: library/views/panel.php:167
+#: library/views/panel.php:181
 msgid ""
 "Design settings for the plugin. You have the option to modify every aspect "
 "of the design so that it matches the look and feel of your website."
 msgstr ""
 
-#: library/views/panel.php:171
+#: library/views/panel.php:185
 msgid "Ignore Default Template Styles"
 msgstr ""
 
-#: library/views/panel.php:174
+#: library/views/panel.php:188
 msgid ""
 "Turn ON this option if you want to ignore default template styling and use "
 "your custom design scheme from below."
 msgstr ""
 
-#: library/views/panel.php:178
+#: library/views/panel.php:192
 msgid "Backgorund Cover Image"
 msgstr ""
 
-#: library/views/panel.php:179
+#: library/views/panel.php:193
 msgid "Enter an image URL or upload using the button below"
 msgstr ""
 
-#: library/views/panel.php:180
+#: library/views/panel.php:194
 msgid "Upload Image"
 msgstr ""
 
-#: library/views/panel.php:182
+#: library/views/panel.php:196
 msgid "Select or upload background cover image for the page."
 msgstr ""
 
-#: library/views/panel.php:186
+#: library/views/panel.php:200
 msgid "Backgorund Color"
 msgstr ""
 
-#: library/views/panel.php:187
+#: library/views/panel.php:201
 msgid "Background color for the page"
 msgstr ""
 
-#: library/views/panel.php:189
+#: library/views/panel.php:203
 msgid ""
 "Select background color for the page. Leave it untouched to use the default "
 "layout. If the background cover is set, this option will be ignored."
 msgstr ""
 
-#: library/views/panel.php:193
+#: library/views/panel.php:207
 msgid "Header Font"
 msgstr ""
 
-#: library/views/panel.php:196 library/views/panel.php:247
+#: library/views/panel.php:210 library/views/panel.php:261
 msgid "Arial"
 msgstr ""
 
-#: library/views/panel.php:197 library/views/panel.php:248
+#: library/views/panel.php:211 library/views/panel.php:262
 msgid "Helvetica"
 msgstr ""
 
-#: library/views/panel.php:198 library/views/panel.php:249
+#: library/views/panel.php:212 library/views/panel.php:263
 msgid "Georgia"
 msgstr ""
 
-#: library/views/panel.php:199 library/views/panel.php:250
+#: library/views/panel.php:213 library/views/panel.php:264
 msgid "Times New Roman"
 msgstr ""
 
-#: library/views/panel.php:200 library/views/panel.php:251
+#: library/views/panel.php:214 library/views/panel.php:265
 msgid "Tahoma"
 msgstr ""
 
-#: library/views/panel.php:201 library/views/panel.php:252
+#: library/views/panel.php:215 library/views/panel.php:266
 msgid "Verdana"
 msgstr ""
 
-#: library/views/panel.php:202 library/views/panel.php:253
+#: library/views/panel.php:216 library/views/panel.php:267
 msgid "Geneva"
 msgstr ""
 
-#: library/views/panel.php:214 library/views/panel.php:265
+#: library/views/panel.php:228 library/views/panel.php:279
 msgid "This is how this font is going to look!"
 msgstr ""
 
-#: library/views/panel.php:216
+#: library/views/panel.php:230
 msgid "Font for the header text. Listing a total of 668 Google web fonts."
 msgstr ""
 
-#: library/views/panel.php:220
+#: library/views/panel.php:234
 msgid "Header Font Size"
 msgstr ""
 
-#: library/views/panel.php:227 library/views/panel.php:278
+#: library/views/panel.php:241 library/views/panel.php:292
 msgid "px"
 msgstr ""
 
-#: library/views/panel.php:233
+#: library/views/panel.php:247
 msgid "Font size for the header text. Select the one as per your preference."
 msgstr ""
 
-#: library/views/panel.php:237
+#: library/views/panel.php:251
 msgid "Header Font Color"
 msgstr ""
 
-#: library/views/panel.php:238
+#: library/views/panel.php:252
 msgid "Font color for the Header text"
 msgstr ""
 
-#: library/views/panel.php:240
+#: library/views/panel.php:254
 msgid ""
 "Select font color for the header text. To use the default colors of the "
 "theme, leave it untouched."
 msgstr ""
 
-#: library/views/panel.php:244
+#: library/views/panel.php:258
 msgid "Secondary Font"
 msgstr ""
 
-#: library/views/panel.php:267
+#: library/views/panel.php:281
 msgid "Font for the secondary text. Listing a total of 668 Google web fonts."
 msgstr ""
 
-#: library/views/panel.php:271
+#: library/views/panel.php:285
 msgid "Secondary Font Size"
 msgstr ""
 
-#: library/views/panel.php:284
+#: library/views/panel.php:298
 msgid ""
 "Font size for the secondary text. Select the one as per your preference."
 msgstr ""
 
-#: library/views/panel.php:288
+#: library/views/panel.php:302
 msgid "Secondary Font Color"
 msgstr ""
 
-#: library/views/panel.php:289
+#: library/views/panel.php:303
 msgid "Font color for the Secondary text"
 msgstr ""
 
-#: library/views/panel.php:291
+#: library/views/panel.php:305
 msgid ""
 "Select font color for the secondary text. To use the default colors of the "
 "theme, leave it untouched."
 msgstr ""
 
-#: library/views/panel.php:299
+#: library/views/panel.php:313
 msgid "ADVANCED"
 msgstr ""
 
-#: library/views/panel.php:301
+#: library/views/panel.php:314
 msgid ""
 "You can add custom HTML & CSS in this section. Making wrong changes over "
 "here will affect the working of the plugin."
 msgstr ""
 
-#: library/views/panel.php:305
+#: library/views/panel.php:318
 msgid "Use Custom HTML & CSS only"
 msgstr ""
 
-#: library/views/panel.php:308
+#: library/views/panel.php:321
 msgid ""
 "If you enable this option, the plugin will ignore everything except the HTML "
 "& CSS you provide. So, use this option carefully."
 msgstr ""
 
-#: library/views/panel.php:312
+#: library/views/panel.php:325
 msgid "Custom HTML"
 msgstr ""
 
-#: library/views/panel.php:316
+#: library/views/panel.php:329
 msgid "Custom HTML for the plugin goes over here. Please note that "
 msgstr ""
 
-#: library/views/panel.php:316
+#: library/views/panel.php:329
 msgid "[html], [head], [title], [meta], [body], and few other tags"
 msgstr ""
 
-#: library/views/panel.php:316
+#: library/views/panel.php:329
 msgid " gets filtered. Only provide content HTML for the page."
 msgstr ""
 
-#: library/views/panel.php:320
+#: library/views/panel.php:333
 msgid "Custom CSS"
 msgstr ""
 
-#: library/views/panel.php:324
+#: library/views/panel.php:337
 msgid "Custom CSS for the plugin goes over here."
 msgstr ""
 
-#: library/views/panel.php:332
+#: library/views/panel.php:345
 msgid "SUPPORT"
 msgstr ""
 
-#: library/views/panel.php:334
+#: library/views/panel.php:346
 msgid ""
 "Getting help is just a click away now. Report issue using the form below and "
 "we will get back to you at your admin email address. If the below support "
 "form is not working for you, kindly send us an email at "
 msgstr ""
 
-#: library/views/panel.php:334
+#: library/views/panel.php:346
 msgid " explaining the issue you are facing with the plugin."
 msgstr ""
 
-#: library/views/panel.php:340
+#: library/views/panel.php:352
 msgid "Email Address"
 msgstr ""
 
-#: library/views/panel.php:341
+#: library/views/panel.php:353
 msgid "Please provide your email address"
 msgstr ""
 
-#: library/views/panel.php:343
+#: library/views/panel.php:355
 msgid "You will receive support response at this email address."
 msgstr ""
 
-#: library/views/panel.php:347
+#: library/views/panel.php:359
 msgid "Issue / Feedback"
 msgstr ""
 
-#: library/views/panel.php:350
+#: library/views/panel.php:362
 msgid ""
 "Please explain the issue you are facing with the plugin. Provide as much "
 "detail as possible."
 msgstr ""
 
-#: library/views/panel.php:353
+#: library/views/panel.php:365
 msgid "Ask for Support"
 msgstr ""
 
-#: library/views/panel.php:360
+#: library/views/panel.php:372
 msgid "INFORMATION"
 msgstr ""
 
-#: library/views/panel.php:362
+#: library/views/panel.php:373
 msgid ""
 "Know more about this plugin, about us and what more we have for you. If you "
 "love this plugin, then please like us on social media."
 msgstr ""
 
-#: library/views/panel.php:374
+#: library/views/panel.php:394
+msgid "OFFERS"
+msgstr ""
+
+#: library/views/panel.php:401
 msgid "BLOG"
 msgstr ""
 
-#: library/views/panel.php:375
+#: library/views/panel.php:402
 msgid ""
 "This blog is dedicated to design, coding, jquery, entrepreneurship, and a "
 "little bit here & there to make you do stuff the right way."
 msgstr ""
 
-#: library/views/panel.php:411
+#: library/views/panel.php:427
 msgid "Save Changes"
 msgstr ""
 
-#: maintenance-mode.php:119
+#: minimal-coming-soon-maintenance-mode.php:115
 msgid "Coming Soon & Maintenance Mode"
 msgstr ""
 
-#: maintenance-mode.php:120
+#: minimal-coming-soon-maintenance-mode.php:116
 msgid "Maintenance Mode"
 msgstr ""

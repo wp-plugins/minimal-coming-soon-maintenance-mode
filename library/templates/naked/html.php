@@ -6,7 +6,7 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.1
+ * @version 0.2
  *
  * Assigning values if the stored values are empty.
  * Starting with page title.

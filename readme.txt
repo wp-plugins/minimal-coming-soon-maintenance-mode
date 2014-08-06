@@ -4,7 +4,7 @@ Donate link: http://www.69signals.com/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,7 @@ It's Simple + flexible and works with any WordPress theme you have installed on 
 * Easily add Custom CSS and HTML.
 * Collect Emails with MailChimp.
 * You can let search engines to view website normally while visitors see the "Coming Soon" page.
+* Visible to only non logged in users so you can build your site while visitors see the "Coming Soon" page. Configurable via options panel.
 * 3 Simple and Minimal templates included.
 * Integrated with Google Fonts.
 * Stretch Background Image to Cover the Entire Browser.
@@ -53,5 +54,14 @@ Getting help is just a click away now. Report issue using the support form in th
 
 == Changelog ==
 
-= 0.1 (1st August 2014) =
+= 0.2 =
+* Enhancement: Allow logged in users to visit the website normally. Option can be turned on or off.
+* Enhancement: Support for adding videos via custom HTML option.
+* Fix: Translation file.
+
+= 0.1 =
 * Initial release
+
+== Upgrade Notice ==
+
+Added option to allow logged in users to visit the website normally, support for adding videos via custom HTML option, and fixed translation file issue.

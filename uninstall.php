@@ -4,7 +4,7 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.1
+ * @version 0.2
  *
  * Checking whether the file is called by the Wordpress uninstall action or not.
  * If not, then exit and prevent unauthorized access.

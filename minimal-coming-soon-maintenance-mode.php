@@ -3,7 +3,7 @@
 Plugin Name: Minimal Coming Soon & Maintenance Mode
 Plugin URI: http://www.69signals.com/minimal-coming-soon-maintenance-mode-plugin.php
 Description: Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
-Version: 0.1
+Version: 0.2
 Author: akshitsethi
 Author URI: http://www.69signals.com
 Domain Path: /languages/
@@ -24,14 +24,12 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
 
-/**
- * Setting up the plugin base over here.
- * Required .JS and .CSS files are included.
- * Including the required files if the user is admin.
- * Defining constants and activation hook.
- */
+- Setting up the plugin base over here.
+- Required .JS and .CSS files are included.
+- Including the required files if the user is admin.
+- Defining constants and activation hook.
+*/
 define ('SIGNALS_CSMM_URL', plugins_url ('', __FILE__));
 define ('SIGNALS_CSMM_PATH', plugin_dir_path (__FILE__));
 
@@ -84,6 +82,7 @@ function csSignalsPluginActivation() {
 		'header_text' 			=> 'Maintenance Mode',
 		'secondary_text' 		=> 'We are performing scheduled maintenance task on our servers because of which the website will be unavailable. In the meantime, you can subscribe to our mailing list and get notified about our important events.',
 		'exclude_se' 			=> 2,
+		'show_logged_in' 		=> 1,
 		'mailchimp_api' 		=> '',
 		'mailchimp_list' 		=> '',
 		'ignore_template'		=> 2,
@@ -147,6 +146,42 @@ if (!function_exists ('csSignalsCleanInput')) {
 }
 
 
+function csSignalsRenderTemplate() {
+
+	global $signals_csmm_options;
+
+	/**
+	 * Fix for the cache plugins.
+	 * Clearing the plugin caches.
+	 * W3 Total Cache and WP Super Cache
+	 */
+	if (function_exists ('wp_cache_clear_cache')) {
+		ob_end_clean();
+		wp_cache_clear_cache();
+	}
+
+	if (function_exists ('w3tc_pgcache_flush')) {
+		ob_end_clean();
+		w3tc_pgcache_flush();
+	}
+
+	/**
+	 * Using the nocache_headers() to ensure that different nocache headers are sent to different browsers.
+	 * We don't want any browser to cache the maintainance page.
+	 * Also, output buffering is turned on.
+	 */
+	nocache_headers();
+	ob_start();
+
+	// The template file for the plugin.
+	include (SIGNALS_CSMM_PATH . 'library/templates/' . $signals_csmm_options['template'] . '/html.php');
+
+	ob_flush();
+	exit();
+
+}
+
+
 function csSignalsPluginInit() {
 
 	global $signals_csmm_options;
@@ -157,21 +192,6 @@ function csSignalsPluginInit() {
 	// Not for the backend. Only modifies the frontend of the system.
 	if (!is_admin()) {
 		if (1 == $signals_csmm_options['status']) {
-			/**
-			 * Fix for the cache plugins.
-			 * Clearing the plugin caches.
-			 * W3 Total Cache and WP Super Cache
-			 */
-			if (function_exists ('wp_cache_clear_cache')) {
-				ob_end_clean();
-				wp_cache_clear_cache();
-			}
-
-			if (function_exists ('w3tc_pgcache_flush')) {
-				ob_end_clean();
-				w3tc_pgcache_flush();
-			}
-
 			/**
 			 * A lot of checks are going on over here.
 			 * We are checking for admin role, crawler status, and important wordpress pages to bypass.
@@ -187,34 +207,28 @@ function csSignalsPluginInit() {
 				// Checking for the search engine option.
 				if (1 == $signals_csmm_options['exclude_se']) {
 					if (!csSignalsCheckReferrer()) {
-						/**
-						 * Using the nocache_headers() to ensure that different nocache headers are sent to different browsers.
-						 * We don't want any browser to cache the maintainance page.
-						 * Also, output buffering is turned on.
-						 */
-						nocache_headers();
-						ob_start();
-
-						// The template file for the plugin.
-						include (SIGNALS_CSMM_PATH . 'library/templates/' . $signals_csmm_options['template'] . '/html.php');
-
-						ob_flush();
-						exit();
+						if (1 == $signals_csmm_options['show_logged_in']) {
+							// Checking if the user is logged in or not.
+							if (!is_user_logged_in()) {
+								// Render the maintenance mode template since the user is not logged in.
+								csSignalsRenderTemplate();
+							}
+						} else {
+							// Render the maintenance mode template.
+							csSignalsRenderTemplate();
+						}
 					}
 				} else {
-					/**
-					 * Using the nocache_headers() to ensure that different nocache headers are sent to different browsers.
-					 * We don't want any browser to cache the maintainance page.
-					 * Also, output buffering is turned on.
-					 */
-					nocache_headers();
-					ob_start();
-
-					// The template file for the plugin.
-					include (SIGNALS_CSMM_PATH . 'library/templates/' . $signals_csmm_options['template'] . '/html.php');
-
-					ob_flush();
-					exit();
+					if (1 == $signals_csmm_options['show_logged_in']) {
+						// Checking if the user is logged in or not.
+						if (!is_user_logged_in()) {
+							// Render the maintenance mode template since the user is not logged in.
+							csSignalsRenderTemplate();
+						}
+					} else {
+						// Render the maintenance mode template.
+						csSignalsRenderTemplate();
+					}
 				}
 			}
 		}
