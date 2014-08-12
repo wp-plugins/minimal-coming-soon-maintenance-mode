@@ -445,4 +445,10 @@ h1 { margin-bottom: 30px; }
 .simply h1 { font-size: 26px; color: #fff; }
 .simply h1 span { background: #ff0000; padding: 8px 16px; border-radius: 4px; }
 .simply p { font-size: 14px; color: #333333; }
-.simply .signals-response.error { color: #999999; }
+.simply .signals-response.error { color: #ff0000; }
+.black { text-align: center; }
+.black h1 { font-family: "Patua One", sans-serif; color: #ffffff; }
+.black p { font-family: "Open Sans", sans-serif; color: #eeeeee; }
+.black .signals-response { padding: 10px 0; font-size: 14px; color: #999999; }
+.black .signals-response.success { color: #999999; }
+.black .signals-response.error { color: #999999; }

@@ -4,7 +4,6 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.2
  */
 ?>
 
@@ -79,6 +78,7 @@
 										<option value="simply"<?php selected ($signals_csmm_options['template'], 'simply'); ?>><?php _e('Simply', 'signals'); ?></option>
 										<option value="naked"<?php selected ($signals_csmm_options['template'], 'naked'); ?>><?php _e('Naked', 'signals'); ?></option>
 										<option value="elegant"<?php selected ($signals_csmm_options['template'], 'elegant'); ?>><?php _e('Elegant', 'signals'); ?></option>
+										<option value="black"<?php selected ($signals_csmm_options['template'], 'black'); ?>><?php _e('Black', 'signals'); ?></option>
 									</select>
 
 									<p class="Signals_Form_Help_Block"><?php _e('Select the template for the plugin. This is shown to your website visitors when the plugin is activated.', 'signals'); ?></p>
@@ -324,15 +324,15 @@
 								<div class="Signals_Form_Group">
 									<label for="signals_CSMM_html" class="Signals_CSMM_Strong"><?php _e('Custom HTML', 'signals'); ?></label>
 									<div id="signals_CSMM_html_editor"></div>
-									<textarea name="signals_CSMM_html" id="signals_CSMM_html" class="Signals_CSMM_Block" rows="8" placeholder="Custom HTML for the plugin"><?php echo esc_textarea ($signals_csmm_options['custom_html']); ?></textarea>
+									<textarea name="signals_CSMM_html" id="signals_CSMM_html" class="Signals_CSMM_Block" rows="8" placeholder="Custom HTML for the plugin"><?php echo stripslashes ($signals_csmm_options['custom_html']); ?></textarea>
 
-									<p class="Signals_Form_Help_Block"><?php echo __('Custom HTML for the plugin goes over here. Please note that ', 'signals') . '<i style="color: #f96773">' . __('[html], [head], [title], [meta], [body], and few other tags', 'signals') . '</i>' . __(' gets filtered. Only provide content HTML for the page.', 'signals'); ?></p>
+									<p class="Signals_Form_Help_Block"><?php echo __('Custom HTML for the plugin goes over here. Please note that ', 'signals') . '<i style="color: #f96773">' . __('[html], [head], [title], [meta], [body], and few other tags', 'signals') . '</i>' . __(' are not required. Only provide content HTML for the page.', 'signals'); ?></p>
 								</div>
 
 								<div class="Signals_Form_Group">
 									<label for="signals_CSMM_disable" class="Signals_CSMM_Strong"><?php _e('Custom CSS', 'signals'); ?></label>
 									<div id="signals_CSMM_css_editor"></div>
-									<textarea name="signals_CSMM_css" id="signals_CSMM_css" class="Signals_CSMM_Block" rows="8" placeholder="Custom CSS for the plugin"><?php echo esc_textarea ($signals_csmm_options['custom_css']); ?></textarea>
+									<textarea name="signals_CSMM_css" id="signals_CSMM_css" class="Signals_CSMM_Block" rows="8" placeholder="Custom CSS for the plugin"><?php echo stripslashes ($signals_csmm_options['custom_css']); ?></textarea>
 
 									<p class="Signals_Form_Help_Block"><?php _e('Custom CSS for the plugin goes over here.', 'signals'); ?></p>
 								</div>

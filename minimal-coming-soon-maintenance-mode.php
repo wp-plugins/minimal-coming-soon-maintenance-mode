@@ -3,7 +3,7 @@
 Plugin Name: Minimal Coming Soon & Maintenance Mode
 Plugin URI: http://www.69signals.com/minimal-coming-soon-maintenance-mode-plugin.php
 Description: Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
-Version: 0.2
+Version: 0.3
 Author: akshitsethi
 Author URI: http://www.69signals.com
 Domain Path: /languages/
@@ -25,10 +25,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-- Setting up the plugin base over here.
-- Required .JS and .CSS files are included.
-- Including the required files if the user is admin.
-- Defining constants and activation hook.
+* Setting up the plugin base over here.
+* Required .JS and .CSS files are included.
+* Including the required files if the user is admin.
+* Defining constants and activation hook.
 */
 define ('SIGNALS_CSMM_URL', plugins_url ('', __FILE__));
 define ('SIGNALS_CSMM_PATH', plugin_dir_path (__FILE__));

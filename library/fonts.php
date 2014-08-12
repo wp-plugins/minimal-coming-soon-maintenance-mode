@@ -4,7 +4,6 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.2
  */
 
 $signals_google_fonts = array (

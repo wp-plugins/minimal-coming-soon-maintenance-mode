@@ -6,7 +6,6 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.2
  *
  * Assigning values if the stored values are empty.
  * Starting with page title.
@@ -79,7 +78,7 @@ if ('' == $signals_csmm_options['secondary_text']) {
 		echo '<style type="text/css">' . "\r\n";
 
 		// .CSS for the page.
-		echo $signals_csmm_options['custom_css'] . "\r\n";
+		echo stripslashes ($signals_csmm_options['custom_css']) . "\r\n";
 
 		echo '</style>' . "\r\n";
 	}
@@ -109,7 +108,7 @@ if ('' == $signals_csmm_options['secondary_text']) {
 			if (!empty ($signals_csmm_options['custom_html'])) {
 				echo '<div class="row">' . "\r\n";
 				echo '<div class="small-12 medium-8 medium-offset-2 columns">' . "\r\n";
-				echo $signals_csmm_options['custom_html'] . "\r\n";
+				echo stripslashes ($signals_csmm_options['custom_html']) . "\r\n";
 				echo '</div>' . "\r\n";
 				echo '</div>' . "\r\n";
 			}
@@ -170,7 +169,7 @@ if ('' == $signals_csmm_options['secondary_text']) {
 						?>
 						<form role="form" method="POST">
 							<input type="text" name="signals_email" placeholder="<?php _e('Enter your email here'); ?>">
-							<button type="submit" class="button small radius alert"><?php _e('Subscribe Me', 'signals'); ?></button>
+							<button type="submit" class="button small radius"><?php _e('Subscribe Me', 'signals'); ?></button>
 						</form>
 					</div>
 				</div>
@@ -195,7 +194,7 @@ if ('' == $signals_csmm_options['secondary_text']) {
 			}
 	} else {
 		// Displaying only the html part.
-		echo $signals_csmm_options['custom_html'];
+		echo stripslashes ($signals_csmm_options['custom_html']);
 	}
 
 ?>

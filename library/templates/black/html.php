@@ -1,11 +1,11 @@
 <?php
 /**
  * Settings management panel for the plugin. The user set options are processed over here.
- * Template: Simply
+ * Template: Black
  *
  * @package WordPress
  * @subpackage CSMM
- * @since 0.1
+ * @since 0.3
  *
  * Assigning values if the stored values are empty.
  * Starting with page title.
@@ -29,28 +29,26 @@ if ('' == $signals_csmm_options['secondary_text']) {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width" />
 <title><?php echo $signals_csmm_options['title']; ?></title>
-<?php
-
-	// Checking whether custom styles are applied or not.
-	if (1 == $signals_csmm_options['ignore_template']) {
-
-?>
 <script src='//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js'></script>
 <script>
 	WebFont.load({
 		google: {
-			families: ['<?php echo $signals_csmm_options["header_font"]; ?>', '<?php echo $signals_csmm_options["secondary_font"]; ?>']
+			<?php
+
+				// Checking whether custom styles are applied or not.
+				if (1 == $signals_csmm_options['ignore_template']) {
+					echo 'families: ["' . $signals_csmm_options["header_font"] . '", "' . $signals_csmm_options["secondary_font"] . '"]';
+				} else {
+					echo 'families: ["Patua One", "Open Sans"]';
+				}
+
+			?>
 		}
 	});
 </script>
-<?php
-
-	}
-
-?>
 <link rel="stylesheet" type="text/css" href="<?php echo SIGNALS_CSMM_URL; ?>/content/css/front.css" />
 <style type="text/css">
-body { background-color: #ffffff; }
+body { background-color: #000000; }
 <?php
 
 	/**
@@ -82,7 +80,7 @@ body { background-color: #ffffff; }
 </head>
 <body>
 <div id="maintenance-mode">
-	<div class="simply">
+	<div class="black">
 
 	<?php
 
@@ -93,9 +91,7 @@ body { background-color: #ffffff; }
 
 			<div class="row">
 				<div class="small-12 medium-8 medium-offset-2 columns">
-					<h1>
-						<span><?php echo $signals_csmm_options['header_text']; ?></span>
-					</h1>
+					<h1><?php echo $signals_csmm_options['header_text']; ?></h1>
 					<p><?php echo $signals_csmm_options['secondary_text']; ?></p>
 				</div>
 			</div>
@@ -165,7 +161,7 @@ body { background-color: #ffffff; }
 								}
 
 							?>
-							<form role="form" method="POST" style="margin: 0">
+							<form role="form" method="POST">
 								<input type="text" name="signals_email" placeholder="<?php _e('Enter your email here'); ?>">
 								<button type="submit" class="button small radius"><?php _e('Subscribe Me', 'signals'); ?></button>
 							</form>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minimal Coming Soon & Maintenance Mode\n"
-"POT-Creation-Date: 2014-08-07 00:20+0530\n"
-"PO-Revision-Date: 2014-08-07 00:20+0530\n"
+"POT-Creation-Date: 2014-08-12 07:09+0530\n"
+"PO-Revision-Date: 2014-08-12 07:09+0530\n"
 "Last-Translator: 69signals <ping@69signals.com>\n"
 "Language-Team: 69signals <ping@69signals.com>\n"
 "Language: en_US\n"
@@ -15,183 +15,242 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: library/templates/elegant/html.php:15 library/templates/naked/html.php:15
-#: library/templates/simply/html.php:15
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:15
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:15
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:15
+#: library/templates/black/html.php:14 library/templates/elegant/html.php:14
+#: library/templates/naked/html.php:14 library/templates/simply/html.php:14
 msgid "Maintainance Mode"
 msgstr ""
 
-#: library/templates/elegant/html.php:20 library/templates/naked/html.php:20
-#: library/templates/simply/html.php:20
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:20
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:20
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:20
+#: library/templates/black/html.php:19 library/templates/elegant/html.php:19
+#: library/templates/naked/html.php:19 library/templates/simply/html.php:19
 msgid "Maintainance Mode."
 msgstr ""
 
-#: library/templates/elegant/html.php:24 library/templates/naked/html.php:24
-#: library/templates/simply/html.php:24
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:24
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:24
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:24
+#: library/templates/black/html.php:23 library/templates/elegant/html.php:23
+#: library/templates/naked/html.php:23 library/templates/simply/html.php:23
 msgid ""
 "We are performing scheduled maintenance task on our servers because of which "
 "the website will be unavailable. In the meantime, you can subscribe to our "
 "mailing list and get notified about our important events."
 msgstr ""
 
-#: library/templates/elegant/html.php:122 library/templates/naked/html.php:126
-#: library/templates/simply/html.php:124
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:122
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:126
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:124
+#: library/templates/black/html.php:119 library/templates/elegant/html.php:121
+#: library/templates/naked/html.php:125 library/templates/simply/html.php:123
 msgid "Please provide your email address."
 msgstr ""
 
-#: library/templates/elegant/html.php:140 library/templates/naked/html.php:144
-#: library/templates/simply/html.php:142
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:140
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:144
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:142
+#: library/templates/black/html.php:137 library/templates/elegant/html.php:139
+#: library/templates/naked/html.php:143 library/templates/simply/html.php:141
 msgid "Oops! Something went wrong."
 msgstr ""
 
-#: library/templates/elegant/html.php:143 library/templates/naked/html.php:147
-#: library/templates/simply/html.php:145
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:143
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:147
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:145
+#: library/templates/black/html.php:140 library/templates/elegant/html.php:142
+#: library/templates/naked/html.php:146 library/templates/simply/html.php:144
 msgid "You are already subscribed!"
 msgstr ""
 
-#: library/templates/elegant/html.php:146 library/templates/naked/html.php:150
-#: library/templates/simply/html.php:148
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:146
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:150
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:148
+#: library/templates/black/html.php:143 library/templates/elegant/html.php:145
+#: library/templates/naked/html.php:149 library/templates/simply/html.php:147
 msgid "Thank you! We'll be in touch!"
 msgstr ""
 
-#: library/templates/elegant/html.php:150 library/templates/naked/html.php:154
-#: library/templates/simply/html.php:152
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:150
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:154
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:152
+#: library/templates/black/html.php:147 library/templates/elegant/html.php:149
+#: library/templates/naked/html.php:153 library/templates/simply/html.php:151
 msgid "Please provide a valid email address."
 msgstr ""
 
-#: library/templates/elegant/html.php:168 library/templates/naked/html.php:172
-#: library/templates/simply/html.php:170
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:168
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:172
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:170
+#: library/templates/black/html.php:165 library/templates/elegant/html.php:167
+#: library/templates/naked/html.php:171 library/templates/simply/html.php:169
 msgid "Enter your email here"
 msgstr ""
 
-#: library/templates/elegant/html.php:169 library/templates/naked/html.php:173
-#: library/templates/simply/html.php:171
+#: bin/trunk__12_Aug_2014/library/templates/elegant/html.php:169
+#: bin/trunk__12_Aug_2014/library/templates/naked/html.php:173
+#: bin/trunk__12_Aug_2014/library/templates/simply/html.php:171
+#: library/templates/black/html.php:166 library/templates/elegant/html.php:168
+#: library/templates/naked/html.php:172 library/templates/simply/html.php:170
 msgid "Subscribe Me"
 msgstr ""
 
-#: library/views/panel.php:15
+#: bin/trunk__12_Aug_2014/library/views/panel.php:15
+#: library/views/panel.php:14
 msgid "Minimal Maintenance Mode"
 msgstr ""
 
-#: library/views/panel.php:15
+#: bin/trunk__12_Aug_2014/library/views/panel.php:15
+#: library/views/panel.php:14
 msgid "by"
 msgstr ""
 
-#: library/views/panel.php:15
+#: bin/trunk__12_Aug_2014/library/views/panel.php:15
+#: library/views/panel.php:14
 msgid "69signals"
 msgstr ""
 
-#: library/views/panel.php:41
+#: bin/trunk__12_Aug_2014/library/views/panel.php:41
+#: library/views/panel.php:40
 msgid "Basic"
 msgstr ""
 
-#: library/views/panel.php:44
+#: bin/trunk__12_Aug_2014/library/views/panel.php:44
+#: library/views/panel.php:43
 msgid "Email"
 msgstr ""
 
-#: library/views/panel.php:47
+#: bin/trunk__12_Aug_2014/library/views/panel.php:47
+#: library/views/panel.php:46
 msgid "Design"
 msgstr ""
 
-#: library/views/panel.php:50
+#: bin/trunk__12_Aug_2014/library/views/panel.php:50
+#: library/views/panel.php:49
 msgid "Advanced"
 msgstr ""
 
-#: library/views/panel.php:53
+#: bin/trunk__12_Aug_2014/library/views/panel.php:53
+#: library/views/panel.php:52
 msgid "Support"
 msgstr ""
 
-#: library/views/panel.php:56
+#: bin/trunk__12_Aug_2014/library/views/panel.php:56
+#: library/views/panel.php:55
 msgid "Information"
 msgstr ""
 
-#: library/views/panel.php:64
+#: bin/trunk__12_Aug_2014/library/views/panel.php:64
+#: library/views/panel.php:63
 msgid "BASIC"
 msgstr ""
 
-#: library/views/panel.php:65
+#: bin/trunk__12_Aug_2014/library/views/panel.php:65
+#: library/views/panel.php:64
 msgid ""
 "Configure the core settings for the plugin. These are the most important "
 "options. So, make sure you configure them carefully."
 msgstr ""
 
-#: library/views/panel.php:69
+#: bin/trunk__12_Aug_2014/library/views/panel.php:69
+#: library/views/panel.php:68
 msgid "Enable Maintenance Mode?"
 msgstr ""
 
-#: library/views/panel.php:72
+#: bin/trunk__12_Aug_2014/library/views/panel.php:72
+#: library/views/panel.php:71
 msgid ""
 "Select the status for the plugin. Do you want to enable Maintenance Mode for "
 "your website?"
 msgstr ""
 
-#: library/views/panel.php:76
+#: bin/trunk__12_Aug_2014/library/views/panel.php:76
+#: library/views/panel.php:75
 msgid "Select Template"
 msgstr ""
 
-#: library/views/panel.php:79
+#: bin/trunk__12_Aug_2014/library/views/panel.php:79
+#: library/views/panel.php:78
 msgid "Simply"
 msgstr ""
 
-#: library/views/panel.php:80
+#: bin/trunk__12_Aug_2014/library/views/panel.php:80
+#: library/views/panel.php:79
 msgid "Naked"
 msgstr ""
 
-#: library/views/panel.php:81
+#: bin/trunk__12_Aug_2014/library/views/panel.php:81
+#: library/views/panel.php:80
 msgid "Elegant"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:84
 #: library/views/panel.php:84
 msgid ""
 "Select the template for the plugin. This is shown to your website visitors "
 "when the plugin is activated."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:88
 #: library/views/panel.php:88
 msgid "Page Title"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:89
 #: library/views/panel.php:89
 msgid "Please provide a Page Title"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:91
 #: library/views/panel.php:91
 msgid "Provide title for the maintenance page."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:95
 #: library/views/panel.php:95
 msgid "Header Text"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:98
 #: library/views/panel.php:98
 msgid ""
 "Provide header text for the plugin over here. If you leave this blank, "
 "default text will be used which is not recommended."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:102
 #: library/views/panel.php:102
 msgid "Secondary Text"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:105
 #: library/views/panel.php:105
 msgid ""
 "Provide secondary text for the plugin over here. If you leave this blank, "
 "default text will be used which is not recommended."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:109
 #: library/views/panel.php:109
 msgid "Show normal website to logged in users?"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:112
 #: library/views/panel.php:112
 msgid ""
 "Enable this option if you want logged in users to view the website normally "
 "while visitors see the maintenance page."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:116
 #: library/views/panel.php:116
 msgid "Exclude Search Engines?"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:119
 #: library/views/panel.php:119
 msgid ""
 "Do you want to exclude search engines from viewing this plugin? This will "
@@ -199,257 +258,323 @@ msgid ""
 "page when the plugin is enabled."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:127
 #: library/views/panel.php:127
 msgid "EMAIL"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:128
 #: library/views/panel.php:128
 msgid ""
 "Email settings for the plugin. You can configure your MailChimp account API "
 "with this plugin to store collected emails in an list."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:132
+#: bin/trunk__12_Aug_2014/library/views/panel.php:133
 #: library/views/panel.php:132 library/views/panel.php:133
 msgid "MailChimp API"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:135
 #: library/views/panel.php:135
 msgid "Provide your MailChimp API over here."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:135
 #: library/views/panel.php:135
 msgid "Click here"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:135
 #: library/views/panel.php:135
 msgid ""
 "to know how to get this information. In case you don't want to enable "
 "subscription option, just leave this field blank."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:139
 #: library/views/panel.php:139
 msgid "MailChimp List"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:154
 #: library/views/panel.php:154
 msgid ""
 "There was an error communicating with the MailChimp server. Please make sure "
 "that the API Key used is correct and try again."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:156
 #: library/views/panel.php:156
 msgid ""
 "It seems that there is no list created for this account. Why not create one "
 "on the MailChimp website and then try here."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:166
 #: library/views/panel.php:166
 msgid ""
 "Select your MailChimp list in which you would like to store the subscribers "
 "data."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:169
 #: library/views/panel.php:169
 msgid ""
 "Provide your MailChimp API key in the above box and click on `Save Changes` "
 "option. Your lists will appear over here."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:180
 #: library/views/panel.php:180
 msgid "DESIGN"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:181
 #: library/views/panel.php:181
 msgid ""
 "Design settings for the plugin. You have the option to modify every aspect "
 "of the design so that it matches the look and feel of your website."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:185
 #: library/views/panel.php:185
 msgid "Ignore Default Template Styles"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:188
 #: library/views/panel.php:188
 msgid ""
 "Turn ON this option if you want to ignore default template styling and use "
 "your custom design scheme from below."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:192
 #: library/views/panel.php:192
 msgid "Backgorund Cover Image"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:193
 #: library/views/panel.php:193
 msgid "Enter an image URL or upload using the button below"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:194
 #: library/views/panel.php:194
 msgid "Upload Image"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:196
 #: library/views/panel.php:196
 msgid "Select or upload background cover image for the page."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:200
 #: library/views/panel.php:200
 msgid "Backgorund Color"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:201
 #: library/views/panel.php:201
 msgid "Background color for the page"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:203
 #: library/views/panel.php:203
 msgid ""
 "Select background color for the page. Leave it untouched to use the default "
 "layout. If the background cover is set, this option will be ignored."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:207
 #: library/views/panel.php:207
 msgid "Header Font"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:210
+#: bin/trunk__12_Aug_2014/library/views/panel.php:261
 #: library/views/panel.php:210 library/views/panel.php:261
 msgid "Arial"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:211
+#: bin/trunk__12_Aug_2014/library/views/panel.php:262
 #: library/views/panel.php:211 library/views/panel.php:262
 msgid "Helvetica"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:212
+#: bin/trunk__12_Aug_2014/library/views/panel.php:263
 #: library/views/panel.php:212 library/views/panel.php:263
 msgid "Georgia"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:213
+#: bin/trunk__12_Aug_2014/library/views/panel.php:264
 #: library/views/panel.php:213 library/views/panel.php:264
 msgid "Times New Roman"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:214
+#: bin/trunk__12_Aug_2014/library/views/panel.php:265
 #: library/views/panel.php:214 library/views/panel.php:265
 msgid "Tahoma"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:215
+#: bin/trunk__12_Aug_2014/library/views/panel.php:266
 #: library/views/panel.php:215 library/views/panel.php:266
 msgid "Verdana"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:216
+#: bin/trunk__12_Aug_2014/library/views/panel.php:267
 #: library/views/panel.php:216 library/views/panel.php:267
 msgid "Geneva"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:228
+#: bin/trunk__12_Aug_2014/library/views/panel.php:279
 #: library/views/panel.php:228 library/views/panel.php:279
 msgid "This is how this font is going to look!"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:230
 #: library/views/panel.php:230
 msgid "Font for the header text. Listing a total of 668 Google web fonts."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:234
 #: library/views/panel.php:234
 msgid "Header Font Size"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:241
+#: bin/trunk__12_Aug_2014/library/views/panel.php:292
 #: library/views/panel.php:241 library/views/panel.php:292
 msgid "px"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:247
 #: library/views/panel.php:247
 msgid "Font size for the header text. Select the one as per your preference."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:251
 #: library/views/panel.php:251
 msgid "Header Font Color"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:252
 #: library/views/panel.php:252
 msgid "Font color for the Header text"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:254
 #: library/views/panel.php:254
 msgid ""
 "Select font color for the header text. To use the default colors of the "
 "theme, leave it untouched."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:258
 #: library/views/panel.php:258
 msgid "Secondary Font"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:281
 #: library/views/panel.php:281
 msgid "Font for the secondary text. Listing a total of 668 Google web fonts."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:285
 #: library/views/panel.php:285
 msgid "Secondary Font Size"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:298
 #: library/views/panel.php:298
 msgid ""
 "Font size for the secondary text. Select the one as per your preference."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:302
 #: library/views/panel.php:302
 msgid "Secondary Font Color"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:303
 #: library/views/panel.php:303
 msgid "Font color for the Secondary text"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:305
 #: library/views/panel.php:305
 msgid ""
 "Select font color for the secondary text. To use the default colors of the "
 "theme, leave it untouched."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:313
 #: library/views/panel.php:313
 msgid "ADVANCED"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:314
 #: library/views/panel.php:314
 msgid ""
 "You can add custom HTML & CSS in this section. Making wrong changes over "
 "here will affect the working of the plugin."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:318
 #: library/views/panel.php:318
 msgid "Use Custom HTML & CSS only"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:321
 #: library/views/panel.php:321
 msgid ""
 "If you enable this option, the plugin will ignore everything except the HTML "
 "& CSS you provide. So, use this option carefully."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:325
 #: library/views/panel.php:325
 msgid "Custom HTML"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:329
 #: library/views/panel.php:329
 msgid "Custom HTML for the plugin goes over here. Please note that "
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:329
 #: library/views/panel.php:329
 msgid "[html], [head], [title], [meta], [body], and few other tags"
 msgstr ""
 
-#: library/views/panel.php:329
+#: bin/trunk__12_Aug_2014/library/views/panel.php:329
 msgid " gets filtered. Only provide content HTML for the page."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:333
 #: library/views/panel.php:333
 msgid "Custom CSS"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:337
 #: library/views/panel.php:337
 msgid "Custom CSS for the plugin goes over here."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:345
 #: library/views/panel.php:345
 msgid "SUPPORT"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:346
 #: library/views/panel.php:346
 msgid ""
 "Getting help is just a click away now. Report issue using the form below and "
@@ -457,68 +582,91 @@ msgid ""
 "form is not working for you, kindly send us an email at "
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:346
 #: library/views/panel.php:346
 msgid " explaining the issue you are facing with the plugin."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:352
 #: library/views/panel.php:352
 msgid "Email Address"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:353
 #: library/views/panel.php:353
 msgid "Please provide your email address"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:355
 #: library/views/panel.php:355
 msgid "You will receive support response at this email address."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:359
 #: library/views/panel.php:359
 msgid "Issue / Feedback"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:362
 #: library/views/panel.php:362
 msgid ""
 "Please explain the issue you are facing with the plugin. Provide as much "
 "detail as possible."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:365
 #: library/views/panel.php:365
 msgid "Ask for Support"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:372
 #: library/views/panel.php:372
 msgid "INFORMATION"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:373
 #: library/views/panel.php:373
 msgid ""
 "Know more about this plugin, about us and what more we have for you. If you "
 "love this plugin, then please like us on social media."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:394
 #: library/views/panel.php:394
 msgid "OFFERS"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:401
 #: library/views/panel.php:401
 msgid "BLOG"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:402
 #: library/views/panel.php:402
 msgid ""
 "This blog is dedicated to design, coding, jquery, entrepreneurship, and a "
 "little bit here & there to make you do stuff the right way."
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/library/views/panel.php:427
 #: library/views/panel.php:427
 msgid "Save Changes"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/minimal-coming-soon-maintenance-mode.php:115
 #: minimal-coming-soon-maintenance-mode.php:115
 msgid "Coming Soon & Maintenance Mode"
 msgstr ""
 
+#: bin/trunk__12_Aug_2014/minimal-coming-soon-maintenance-mode.php:116
 #: minimal-coming-soon-maintenance-mode.php:116
 msgid "Maintenance Mode"
+msgstr ""
+
+#: library/views/panel.php:81
+msgid "Black"
+msgstr ""
+
+#: library/views/panel.php:329
+msgid " are not required. Only provide content HTML for the page."
 msgstr ""

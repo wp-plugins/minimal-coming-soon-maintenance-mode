@@ -4,16 +4,12 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.2
  */
 
 function csSignalsAdminSettings() {
 
 	// Including the MailChimp class.
 	include ('API/class.MailChimp.php');
-
-	// Allowed HTML and CSS tags.
-	include ('tags.php');
 
 	// List of Google fonts.
 	include ('fonts.php');
@@ -62,14 +58,10 @@ function csSignalsAdminSettings() {
 			$signals_csmm_list = '';
 		}
 
-
-		// Filtering and Sanitizing data to prevent security issues.
-		// Sanitization and filtering for the HTML and CSS data.
-		$signals_csmm_html = wp_kses ($_POST['signals_CSMM_html'], $signals_allowed_tags);
-		// Balancing tags to ensure all closing tags are present.
-		$signals_csmm_html = balanceTags ($signals_csmm_html, TRUE);
-
-		$signals_csmm_css = wp_kses ($_POST['signals_CSMM_css'], $signals_allowed_tags);
+		// Not sanitizing the HTML and CSS provided by the admin.
+		// Giving full freedom to them :)
+		$signals_csmm_html 	= $_POST['signals_CSMM_html'];
+		$signals_csmm_css 	= $_POST['signals_CSMM_css'];
 
 
 		// Saving the record to the database.

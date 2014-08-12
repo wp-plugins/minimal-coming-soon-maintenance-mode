@@ -6,7 +6,6 @@
  * @package WordPress
  * @subpackage CSMM
  * @since 0.1
- * @version 0.2
  *
  * Assigning values if the stored values are empty.
  * Starting with page title.
@@ -62,7 +61,7 @@ body { background: url('<?php echo SIGNALS_CSMM_URL; ?>/content/img/data/elegant
 	if (2 == $signals_csmm_options['disable_settings']) {
 		if (1 == $signals_csmm_options['ignore_template']) {
 			// Applying custom styles to the header text.
-			echo 'body { background-color: #' . $signals_csmm_options['bg_color'] . ' !important }' . "\r\n";
+			echo 'body { background: #' . $signals_csmm_options['bg_color'] . ' !important }' . "\r\n";
 
 			// Applying custom styles to the header text.
 			echo 'h1 { font-family: "' . $signals_csmm_options['header_font'] . '", sans-serif !important; font-size: ' . $signals_csmm_options['header_font_size'] . 'px !important; color: #' . $signals_csmm_options['header_font_color'] . ' !important }' . "\r\n";
@@ -75,7 +74,7 @@ body { background: url('<?php echo SIGNALS_CSMM_URL; ?>/content/img/data/elegant
 	// Showing the custom CSS over here.
 	if (!empty ($signals_csmm_options['custom_css'])) {
 		// .CSS for the page.
-		echo $signals_csmm_options['custom_css'] . "\r\n";
+		echo stripslashes ($signals_csmm_options['custom_css']) . "\r\n";
 	}
 
 ?>
@@ -105,7 +104,7 @@ body { background: url('<?php echo SIGNALS_CSMM_URL; ?>/content/img/data/elegant
 				if (!empty ($signals_csmm_options['custom_html'])) {
 					echo '<div class="row">' . "\r\n";
 					echo '<div class="small-12 medium-8 medium-offset-2 columns">' . "\r\n";
-					echo $signals_csmm_options['custom_html'] . "\r\n";
+					echo stripslashes ($signals_csmm_options['custom_html']) . "\r\n";
 					echo '</div>' . "\r\n";
 					echo '</div>' . "\r\n";
 				}
@@ -191,7 +190,7 @@ body { background: url('<?php echo SIGNALS_CSMM_URL; ?>/content/img/data/elegant
 				}
 		} else {
 			// Displaying only the html part.
-			echo $signals_csmm_options['custom_html'];
+			echo stripslashes ($signals_csmm_options['custom_html']);
 		}
 
 	?>
