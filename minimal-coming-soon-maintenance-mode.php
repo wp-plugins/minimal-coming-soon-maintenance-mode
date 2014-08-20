@@ -3,7 +3,7 @@
 Plugin Name: Minimal Coming Soon & Maintenance Mode
 Plugin URI: http://www.69signals.com/minimal-coming-soon-maintenance-mode-plugin.php
 Description: Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
-Version: 0.3
+Version: 0.4
 Author: akshitsethi
 Author URI: http://www.69signals.com
 Domain Path: /languages/
@@ -83,6 +83,7 @@ function csSignalsPluginActivation() {
 		'secondary_text' 		=> 'We are performing scheduled maintenance task on our servers because of which the website will be unavailable. In the meantime, you can subscribe to our mailing list and get notified about our important events.',
 		'exclude_se' 			=> 2,
 		'show_logged_in' 		=> 1,
+		'custom_login_url' 		=> '',
 		'mailchimp_api' 		=> '',
 		'mailchimp_list' 		=> '',
 		'ignore_template'		=> 2,
@@ -189,6 +190,19 @@ function csSignalsPluginInit() {
 	// Localization.
 	load_plugin_textdomain ('signals', FALSE, SIGNALS_CSMM_PATH . 'languages');
 
+	// Getting custom login URL for the admin.
+	$signals_custom_url = wp_login_url();
+
+	// Checking for the server protocol status.
+	if (isset ($_SERVER['HTTPS']) === TRUE) {
+		$signals_protocol = 'https';
+	} else {
+		$signals_protocol = 'http';
+	}
+
+	// This is the server address of the current page.
+	$signals_server_url = $signals_protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
 	// Not for the backend. Only modifies the frontend of the system.
 	if (!is_admin()) {
 		if (1 == $signals_csmm_options['status']) {
@@ -197,12 +211,14 @@ function csSignalsPluginInit() {
 			 * We are checking for admin role, crawler status, and important wordpress pages to bypass.
 			 * If the admin decides to exclude search engine from viewing the plugin, the website will be shown.
 			 */
-			if (FALSE === strpos ($_SERVER['PHP_SELF'], 'wp-login.php')
-				&& FALSE === strpos ($_SERVER['PHP_SELF'], 'wp-admin/')
-				&& FALSE === strpos ($_SERVER['PHP_SELF'], 'async-upload.php')
-				&& FALSE === strpos ($_SERVER['PHP_SELF'], 'upgrade.php')
-				&& FALSE === strpos ($_SERVER['PHP_SELF'], '/plugins/')
-				&& FALSE === strpos ($_SERVER['PHP_SELF'], '/xmlrpc.php')) {
+			if (FALSE === strpos ($signals_server_url, '/wp-login.php')
+				&& FALSE === strpos ($signals_server_url, '/wp-admin/')
+				&& FALSE === strpos ($signals_server_url, '/async-upload.php')
+				&& FALSE === strpos ($signals_server_url, '/upgrade.php')
+				&& FALSE === strpos ($signals_server_url, '/plugins/')
+				&& FALSE === strpos ($signals_server_url, '/xmlrpc.php')
+				&& FALSE === strpos ($signals_server_url, $signals_custom_url)
+				&& FALSE === strpos ($signals_server_url, $signals_csmm_options['custom_login_url'])) {
 
 				// Checking for the search engine option.
 				if (1 == $signals_csmm_options['exclude_se']) {

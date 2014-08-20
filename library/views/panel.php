@@ -118,6 +118,13 @@
 
 									<p class="Signals_Form_Help_Block"><?php _e('Do you want to exclude search engines from viewing this plugin? This will enable search engines to view your website rather than the Maintenance Mode page when the plugin is enabled.', 'signals'); ?></p>
 								</div>
+
+								<div class="Signals_Form_Group">
+									<label for="signals_CSMM_custom_login" class="Signals_CSMM_Strong"><?php _e('Custom login URL', 'signals'); ?></label>
+									<input type="text" name="signals_CSMM_custom_login" id="signals_CSMM_custom_login" value="<?php echo sanitize_text_field ($signals_csmm_options['custom_login_url']); ?>" placeholder="<?php _e('Custom login URL', 'signals'); ?>" class="Signals_Form_Control">
+
+									<p class="Signals_Form_Help_Block"><?php _e('In case you are using any plugin for custom login, provide your custom login URL over here. This plugin should be able to detect your custom login automatically in most of the situations. In case it fails to do so, you can provide the custom login URL over here.', 'signals'); ?></p>
+								</div>
 							</div>
 						</div>
 					</div><!-- #basic -->

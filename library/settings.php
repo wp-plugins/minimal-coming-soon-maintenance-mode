@@ -72,6 +72,7 @@ function csSignalsAdminSettings() {
 			'header_text' 			=> csSignalsCleanInput ($_POST['signals_CSMM_header']),
 			'secondary_text' 		=> csSignalsCleanInput ($_POST['signals_CSMM_secondary']),
 			'show_logged_in' 		=> $signals_csmm_logged,
+			'custom_login_url' 		=> csSignalsCleanInput ($_POST['signals_CSMM_custom_login']),
 			'exclude_se'			=> $signals_csmm_exclude,
 			'mailchimp_api'			=> csSignalsCleanInput ($_POST['signals_CSMM_api']),
 			'mailchimp_list' 		=> $signals_csmm_list,
