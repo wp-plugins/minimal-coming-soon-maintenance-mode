@@ -4,7 +4,7 @@ Donate link: http://www.69signals.com/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5.0
 Tested up to: 4.0
-Stable tag: 0.4
+Stable tag: 0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -66,6 +66,9 @@ Getting help is just a click away now. Report issue using the support form in th
 
 == Changelog ==
 
+= 0.5 =
+* FIXED: Empty needle error.
+
 = 0.4 =
 * Enhancement: Added support for custom login URL.
 
@@ -84,4 +87,4 @@ Getting help is just a click away now. Report issue using the support form in th
 
 == Upgrade Notice ==
 
-Added support for custom login URL.
+Fixed empty needle error for custom login url.
