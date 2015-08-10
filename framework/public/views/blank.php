@@ -70,7 +70,6 @@
 							$signals_response 	= $signals_connect->call( 'lists/subscribe', array(
 								'id'            => $options['mailchimp_list'],
 								'email'         => array( 'email' => $signals_email ),
-								'double_optin'  => false,
 								'send_welcome'  => true
 							) );
 

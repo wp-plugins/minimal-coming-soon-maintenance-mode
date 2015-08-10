@@ -4,7 +4,7 @@ Donate link: http://www.69signals.com/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5.0
 Tested up to: 4.3
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
