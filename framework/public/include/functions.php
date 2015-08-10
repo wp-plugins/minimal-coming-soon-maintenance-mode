@@ -33,13 +33,19 @@ function csmm_render_template( $options ) {
 	ob_start();
 
 
-	// Checking for required options required for the plugin
-	if ( empty( $options['title'] ) ) 			:	$options['title'] 			= __( 'Maintainance Mode', 'signals' );				endif;
-	if ( empty( $options['input_text'] ) )		:	$options['input_text'] 		= __( 'Enter your email address..', 'signals' ); 	endif;
-	if ( empty( $options['button_text'] ) )		:	$options['button_text'] 	= __( 'Subscribe', 'signals' ); 					endif;
+	// Checking for options required for the plugin
+	if ( empty( $options['title'] ) ) 				:	$options['title'] 				= __( 'Maintainance Mode', 'signals' );					endif;
+	if ( empty( $options['input_text'] ) )			:	$options['input_text'] 			= __( 'Enter your email address..', 'signals' );	 	endif;
+	if ( empty( $options['button_text'] ) )			:	$options['button_text'] 		= __( 'Subscribe', 'signals' ); 						endif;
+
+	// Response message
+	if ( empty( $options['message_noemail'] ) )		:	$options['message_noemail'] 	=__( 'Oops! Something went wrong.', 'signals' ); 		endif;
+	if ( empty( $options['message_subscribed'] ) )	:	$options['message_subscribed'] 	=__( 'You are already subscribed!', 'signals' ); 		endif;
+	if ( empty( $options['message_wrong'] ) )		:	$options['message_wrong'] 		=__( 'Oops! Something went wrong.', 'signals' ); 		endif;
+	if ( empty( $options['message_done'] ) )		:	$options['message_done'] 		=__( 'Thank you! We\'ll be in touch!', 'signals' ); 	endif;
 
 
-	// The template file for the plugin
+	// Template file
 	if ( '1' == $options['disable_settings'] ) {
 		require_once SIGNALS_CSMM_PATH . 'framework/public/views/blank.php';
 	} else {
@@ -51,7 +57,6 @@ function csmm_render_template( $options ) {
 	exit();
 
 }
-
 
 
 // To check the referrer
@@ -95,7 +100,6 @@ function csmm_check_referrer() {
 	return false;
 
 }
-
 
 
 // Function to match the user agent with the crawlers array

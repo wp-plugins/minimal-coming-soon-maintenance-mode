@@ -12,7 +12,7 @@
 
 <div class="signals-tile" id="about">
 	<div class="signals-tile-body">
-		<p class="signals-strong"><?php _e( 'We are a creative digital agency.', 'signals' ); ?></p>
+		<p class="signals-strong"><?php _e( 'We are a Creative Digital Marketplace.', 'signals' ); ?></p>
 		<p><?php _e( 'We love to weave the web, simple but amazing. We create flawless web and mobile applications. Our perfectly crafted products will make you believe us.', 'signals' ); ?></p>
 
 		<div class="signals-section-content">
@@ -36,7 +36,7 @@
 						echo $signals_offers['body'] . '<br/>';
 
 						// Setting the transient over here so that it does not ping the server again for a day atleast
-						set_transient( 'signals_csmm_offer', $signals_offers['body'], 60*60*24 );
+						set_transient( 'signals_csmm_offer', $signals_offers['body'], 60 * 60 * 24 );
 					} // $signals_offers
 				} // $offers_transient
 

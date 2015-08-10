@@ -3,8 +3,8 @@ Contributors: akshitsethi
 Donate link: http://www.69signals.com/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5.0
-Tested up to: 4.1
-Stable tag: 1.0
+Tested up to: 4.3
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,12 +22,15 @@ It's Simple + flexible and works with any WordPress theme you have installed on 
 * Works with any WordPress Theme.
 * Completely customizable look and feel including Background Color, Cover Image, Fonts etc.
 * Each and every element of the maintenance page can be configured.
+* Option to preview the maintenance page for changes made before activating it.
+* Arrange position of the page elements as per preference.
 * W3 Total Cache and WP Super Cache Support.
 * Easily add Custom CSS and HTML.
 * Collect Emails with MailChimp.
 * You can let search engines to view website normally while visitors see the "Coming Soon" page.
 * Visible to only non logged in users so you can build your site while visitors see the "Coming Soon" page. Configurable via options panel.
 * Supports Custom Login URL.
+* Track visitors with support for Analytics.
 * Integrated with Google Fonts.
 * Stretch Background Image to Cover the Entire Browser.
 * Uses HTML5 & CSS3.
@@ -36,10 +39,9 @@ It's Simple + flexible and works with any WordPress theme you have installed on 
 * Get support within the options panel itself. It's something you going to love.
 
 
-
 About **69signals**
 
-We are a creative digital agency. We love to weave the web, simple but amazing. We create flawless web and mobile applications. Our perfectly crafted products will make you believe us.
+We are a Creative Digital Marketplace. We love to weave the web, simple but amazing. We create flawless web and mobile applications. Our perfectly crafted products will make you believe us.
 
 [Support](http://www.69signals.com/support/) | [Services](http://www.69signals.com/services.php) | [Hire Us](http://www.69signals.com/hire-us.php) | [Subscribe to our Newsletter](http://www.69signals.com/#subscribe)
 
@@ -71,6 +73,18 @@ Getting help is just a click away now. Report your issues using the support form
 
 
 == Changelog ==
+
+= 1.1 =
+
+* ADDED: Preview maintenance page before activating it.
+* ADDED: Arrange position of the page elements as per preference.
+* ADDED: Option to add tracking (analytics) code to the page.
+* ADDED: Custom HTML section to the maintenance page.
+* ADDED: Option to style form messages.
+* ADDED: Option to customize the messages shown for subscription.
+* IMPROVED: Now adds line breaks to header and secondary text for each new line in the textarea.
+* IMPROVED: Layout changes.
+* FIXED: Issues with MailChimp for some users.
 
 = 1.0 =
 * **Completely re-written from the scratch.**
@@ -105,4 +119,4 @@ Getting help is just a click away now. Report your issues using the support form
 
 == Upgrade Notice ==
 
-Completely re-written from the scratch. An important update to the plugin.
+Various improvements made to the plugin. Adds option to preview maintenance page, analytics support, visual improvements, and more customization options. Recommended update.

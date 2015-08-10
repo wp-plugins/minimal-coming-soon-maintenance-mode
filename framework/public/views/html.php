@@ -37,30 +37,26 @@
 	<div class="maintenance-mode">
 		<div class="s-container">
 			<div class="content">
-
 				<?php
 
 					// Logo
 					if ( ! empty( $options['logo'] ) ) {
-						echo '<div class="logo-container">' . "\r\n";
-						echo '<img src="' . $options['logo'] . '" class="logo" />' . "\r\n";
-						echo '</div>' . "\r\n";
+						$signals_arrange['logo'] = '<div class="logo-container">' . "\r\n";
+						$signals_arrange['logo'] .= '<img src="' . $options['logo'] . '" class="logo" />' . "\r\n";
+						$signals_arrange['logo'] .= '</div>' . "\r\n";
 					}
-
 
 					// Header text
 					if ( ! empty( $options['header_text'] ) ) {
-						echo '<h1 class="header-text">' . stripslashes( $options['header_text'] ) . '</h1>' . "\r\n";
+						$signals_arrange['header'] = '<h1 class="header-text">' . stripslashes( nl2br( $options['header_text'] ) ) . '</h1>' . "\r\n";
 					}
-
 
 					// Secondary text
 					if ( ! empty( $options['secondary_text'] ) ) {
-						echo '<p class="secondary-text">' . stripslashes( $options['secondary_text'] ) . '</p>' . "\r\n";
+						$signals_arrange['secondary'] = '<p class="secondary-text">' . stripslashes( nl2br( $options['secondary_text'] ) ) . '</p>' . "\r\n";
 					}
 
-
-					// Checking for the mailchimp api. If the api and the list id are present, show the form
+					// Form
 					if ( ! empty( $options['mailchimp_api'] ) && ! empty( $options['mailchimp_list'] ) ) {
 						// Checking if the form is submitted or not
 						if ( isset( $_POST['signals_email'] ) ) {
@@ -68,15 +64,15 @@
 							$signals_email = strip_tags( $_POST['signals_email'] );
 
 							if ( '' === $signals_email ) {
-								$signals_msg['code'] 		= 'danger';
-								$signals_msg['response'] 	= __( 'Please provide your email address.', 'signals' );
+								$code 		= 'danger';
+								$response 	= __( 'Please provide your email address.', 'signals' );
 							} else {
 								$signals_email = filter_var( strtolower( trim( $signals_email ) ), FILTER_SANITIZE_EMAIL );
 
 								if ( strpos( $signals_email, '@' ) ) {
 									require_once SIGNALS_CSMM_PATH . '/framework/admin/include/classes/class-mailchimp.php';
 
-									$signals_connect 	= new MailChimp( $options['mailchimp_api'] );
+									$signals_connect 	= new Signals_MailChimp( $options['mailchimp_api'] );
 									$signals_response 	= $signals_connect->call( 'lists/subscribe', array(
 										'id'            => $options['mailchimp_list'],
 										'email'         => array( 'email' => $signals_email ),
@@ -87,61 +83,77 @@
 
 									// Showing message as per the response from the mailchimp server
 									if ( isset( $signals_response['code'] ) && 214 !== $signals_response['code'] ) {
-										$signals_msg['code'] 		= 'danger';
-										$signals_msg['response'] 	= __( 'Oops! Something went wrong.', 'signals' );
+										$code 		= 'danger';
+										$response 	= $options['message_wrong'];
 									} elseif ( isset( $signals_response['code'] ) && 214 === $signals_response['code'] ) {
-										$signals_msg['code'] 		= 'success';
-										$signals_msg['response'] 	= __( 'You are already subscribed!', 'signals' );
+										$code 		= 'success';
+										$response 	= $options['message_subscribed'];
 									} else {
-										$signals_msg['code'] 		= 'success';
-										$signals_msg['response'] 	= __( 'Thank you! We\'ll be in touch!', 'signals' );
+										$code 		= 'success';
+										$response 	= $options['message_done'];
 									}
 								} else {
-									$signals_msg['code'] 			= 'danger';
-									$signals_msg['response'] 		= __( 'Please provide a valid email address.', 'signals' );
+									$code 			= 'danger';
+									$response 		= $options['message_noemail'];
 								}
 							}
 						} // signals_email
 
-				?>
+						// Subscription form
+						// Displaying errors as well if they are set
+						$signals_arrange['form'] = '<div class="subscription">';
 
-						<div class="subscription">
-							<?php
+						if ( isset( $code ) && isset( $response ) ) {
+							$signals_arrange['form'] .= '<div class="signals-alert signals-alert-' . $code . '">' . $response . '</div>';
+						}
 
-								// If the error is set
-								if ( isset( $signals_msg ) ) {
-									echo '<div class="signals-alert signals-alert-' . $signals_msg['code'] . '">' . $signals_msg['response'] . '</div>';
-								}
+						$signals_arrange['form'] .= '<form role="form" method="post">
+							<input type="text" name="signals_email" placeholder="' . esc_attr( $options['input_text'] ) . '">
+							<input type="submit" name="submit" value="' . esc_attr( $options['button_text'] ) . '">
+						</form>';
 
-							?>
+						// antispam text
+						if ( ! empty( $options['antispam_text'] ) ) {
+							// The best part, we don't do spam!
+							$signals_arrange['form'] .= '<p class="anti-spam">' . stripslashes( $options['antispam_text'] ) . '</p>';
+						}
 
-							<form role="form" method="post">
-								<input type="text" name="signals_email" placeholder="<?php esc_attr_e( stripslashes( $options['input_text'] ) ); ?>">
-								<input type="submit" name="submit" value="<?php esc_attr_e( stripslashes( $options['button_text'] ) ); ?>">
-							</form>
+						$signals_arrange['form'] .= '</div>';
 
-							<?php
 
-								// If yes, show antispam text
-								if ( ! empty( $options['antispam_text'] ) ) {
-									// The best part, we don't do spam!
-									echo '<p class="anti-spam">' . stripslashes( $options['antispam_text'] ) . '</p>';
-								}
+					} // mailchimp_api && mailchimp_list
 
-							?>
-						</div>
+					// Custom HTML
+					$signals_arrange['html'] = stripslashes( $options['custom_html'] );
 
-				<?php
+					// Let's show the sections now!
+					if ( isset( $options['arrange'] ) && '' != $options['arrange'] ) {
+						$signals_sections = explode( ',', $options['arrange'] );
+					} else {
+						$signals_sections = array( 'logo', 'header', 'secondary', 'form', 'html' );
+					}
 
-					} // mailchimp_api || mailchimp_list
+					foreach ( $signals_sections as $signals_section ) {
+						if ( isset( $signals_arrange[$signals_section] ) ) {
+							echo $signals_arrange[$signals_section];
+						}
+					}
 
 				?>
 			</div><!-- .content -->
 		</div><!-- .s-container -->
 	</div><!-- .maintenance-mode -->
 
+<?php
 
-	<!-- Maintenance Mode Plugin by 69signals (http://www.69signals.com) -->
-	<!-- We are a creative digital agency. We love to weave the web, simple but amazing. We create flawless web and mobile applications. -->
+	// analytics
+	if ( isset( $options['analytics'] ) && '' != $options['analytics'] ) {
+		echo stripslashes( $options['analytics'] ) . "\r\n";
+	}
+
+?>
+
+<!-- Maintenance Mode Plugin by 69signals (http://www.69signals.com) -->
+<!-- We are a Creative Digital Marketplace. We love to weave the web, simple but amazing. We create flawless web and mobile applications. -->
 </body>
 </html>

@@ -241,6 +241,40 @@ if ( '1' == $options['ignore_form_styles'] ) {
 
 		echo '}' . "\r\n";
 	}
+
+	// Message: success
+	if ( ! empty( $options['success_background'] ) || ! empty( $options['success_color'] ) ) {
+		echo '.signals-alert-success{';
+
+		// success background
+		if ( ! empty( $options['success_background'] ) ) {
+			echo 'background:#' . $options['success_background'] . ';';
+		}
+
+		// success color
+		if ( ! empty( $options['success_color'] ) ) {
+			echo 'color:#' . $options['success_color'] . ';';
+		}
+
+		echo '}' . "\r\n";
+	}
+
+	// Message: error
+	if ( ! empty( $options['error_background'] ) || ! empty( $options['error_color'] ) ) {
+		echo '.signals-alert-danger{';
+
+		// error background
+		if ( ! empty( $options['error_background'] ) ) {
+			echo 'background:#' . $options['error_background'] . ';';
+		}
+
+		// error color
+		if ( ! empty( $options['error_color'] ) ) {
+			echo 'color:#' . $options['error_color'] . ';';
+		}
+
+		echo '}' . "\r\n";
+	}
 }
 
 

@@ -165,7 +165,7 @@
 	background: #fff;
 	border-top: 1px solid #eee;
 	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.05);
-	z-index: 999999;
+	z-index: 9999;
 }
 .signals-share a {
 	display: inline-block;
@@ -173,6 +173,18 @@
 }
 .signals-share a:last-child {
 	margin-right: 0;
+}
+.signals-elements {
+	border: 1px solid #f1f1f1;
+	padding: 10px 20px;
+	margin-bottom: 30px;
+}
+#arrange-items li {
+	background: #f3f3f3;
+	padding: 5px 15px;
+	font-weight: bold;
+	cursor: move;
+	cursor: -webkit-grabbing;
 }
 
 /* Forms */
@@ -310,6 +322,10 @@ textarea.signals-form-control {
 }
 .signals-double-group:last-child {
 	border: none;
+}
+.signals-double-group.no-border {
+	border-bottom: 0;
+	margin-bottom: 14px;
 }
 .signals-double-group .signals-form-group {
 	border-bottom: none;

@@ -36,6 +36,7 @@ require_once 'header.php';
 					<li><a href="#design"><?php _e( 'Design', 'signals' ); ?></a></li>
 					<li><a href="#form"><?php _e( 'Form', 'signals' ); ?></a></li>
 					<li><a href="#advanced"><?php _e( 'Advanced', 'signals' ); ?></a></li>
+					<li><a href="#preview"><?php _e( 'Preview', 'signals' ); ?></a></li>
 					<li><a href="#support"><?php _e( 'Support', 'signals' ); ?></a></li>
 					<li><a href="#about"><?php _e( 'About', 'signals' ); ?></a></li>
 				</ul>
@@ -50,6 +51,7 @@ require_once 'header.php';
 					require_once 'settings-design.php';		// design
 					require_once 'settings-form.php';		// form
 					require_once 'settings-advanced.php';	// advanced
+					require_once 'settings-preview.php';	// preview
 					require_once 'settings-support.php';	// support
 					require_once 'settings-about.php';		// about
 

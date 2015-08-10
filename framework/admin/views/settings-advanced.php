@@ -30,7 +30,7 @@
 				<textarea name="signals_csmm_html" id="signals_csmm_html" rows="8" placeholder="<?php _e( 'Custom HTML for the plugin', 'signals' ); ?>"><?php echo stripslashes( $signals_csmm_options['custom_html'] ); ?></textarea>
 
 				<p class="signals-form-help-block"><?php echo __( 'Custom HTML for the plugin goes over here. Please note that ', 'signals' ) . '<i style="color: #f96773">' . __( '[html], [head], [title], [meta], [body], and similar tags', 'signals' ) . '</i>' . __( ' are not required. Only provide content HTML for the page.', 'signals' ); ?></p>
-				<p class="signals-form-help-block"><?php _e( 'To insert subscription form anywhere in the html, simply use the placeholder <strong>{{form}}</strong> and you are done.', 'signals' ); ?></p>
+				<p class="signals-form-help-block"><?php _e( 'To insert subscription form anywhere in the html, simply use the placeholder <strong>{{form}}</strong> and you are done. This should only be used if you have enabled the above option to use custom HTML only.', 'signals' ); ?></p>
 			</div>
 
 			<div class="signals-form-group">

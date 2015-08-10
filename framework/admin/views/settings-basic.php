@@ -79,6 +79,46 @@
 					<p class="signals-form-help-block"><?php _e( 'Do you want to exclude search engines from viewing maintenance page? This will enable search engines to view your regular website and not the Maintenance Mode page even if the plugin is enabled.', 'signals' ); ?></p>
 				</div>
 			</div>
+
+			<label class="signals-strong"><?php _e( 'Arrange Elements', 'signals' ); ?></label>
+			<p class="signals-form-help-block"><?php _e( 'Select the order in which you would like to display the sections on the maintenance page. To change the order, simply drag the items and arrange as per your preference.', 'signals' ); ?></p>
+			<div class="signals-elements">
+				<ul id="arrange-items">
+					<?php
+
+						if ( isset( $signals_csmm_options['arrange'] ) && '' != ( $signals_csmm_options['arrange'] ) ) {
+							$signals_arrange = explode( ',', $signals_csmm_options['arrange'] );
+
+							// list items
+							foreach ( $signals_arrange as $signals_item ) {
+								if ( 'html' == $signals_item ) {
+									echo '<li data-id="' . $signals_item . '">' . __( 'Custom HTML', 'signals' ) . '</li>';
+								} else {
+									echo '<li data-id="' . $signals_item . '">' . ucfirst( $signals_item ) . '</li>';
+								}
+							}
+						} else {
+
+					?>
+
+							<li data-id="logo"><?php _e( 'Logo', 'signals' ); ?></li>
+							<li data-id="header"><?php _e( 'Header Text', 'signals' ); ?></li>
+							<li data-id="secondary"><?php _e( 'Secondary Text', 'signals' ); ?></li>
+							<li data-id="form"><?php _e( 'Form', 'signals' ); ?></li>
+							<li data-id="html"><?php _e( 'Custom HTML', 'signals' ); ?></li>
+
+					<?php } // arrange ?>
+				</ul>
+
+				<input type="hidden" name="signals_csmm_arrange" id="signals_csmm_arrange" value="<?php echo esc_attr_e( $signals_csmm_options['arrange'] ); ?>">
+			</div>
+
+			<div class="signals-form-group">
+				<label for="signals_csmm_analytics" class="signals-strong"><?php _e( 'Analytics Code', 'signals' ); ?></label>
+				<textarea name="signals_csmm_analytics" id="signals_csmm_analytics" rows="5" placeholder="<?php esc_attr_e( 'Analytics code for the maintenance page', 'signals' ); ?>"><?php echo esc_textarea( stripslashes( $signals_csmm_options['analytics'] ) ); ?></textarea>
+
+				<p class="signals-form-help-block"><?php _e( 'Provide analytics code for the maintenance page. It\'s good to have tracking installed :)', 'signals' ); ?></p>
+			</div>
 		</div>
 	</div>
 </div><!-- #basic -->

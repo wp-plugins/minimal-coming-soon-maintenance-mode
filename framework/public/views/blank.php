@@ -35,9 +35,9 @@
 
 	// user defined css for the blank mode
 	if ( ! empty( $options['custom_css'] ) ) {
-		echo '<style>' . "\r\n";
-		echo stripslashes( $options['custom_css'] ) . "\r\n";
-		echo '</style>' . "\r\n";
+		echo '<style>';
+		echo stripslashes( $options['custom_css'] );
+		echo '</style>';
 	}
 
 ?>
@@ -49,6 +49,7 @@
 		// Nothing else will be included here since we are serving a blank template
 		$custom_html = stripslashes( $options['custom_html'] );
 
+		// form
 		if ( ! empty( $custom_html ) && false !== strpos( $custom_html, '{{form}}' ) ) {
 			if ( ! empty( $options['mailchimp_api'] ) && ! empty( $options['mailchimp_list'] ) ) {
 				// Checking if the form is submitted or not
@@ -65,7 +66,7 @@
 						if ( strpos( $signals_email, '@' ) ) {
 							require_once SIGNALS_CSMM_PATH . '/framework/admin/include/classes/class-mailchimp.php';
 
-							$signals_connect 	= new MailChimp( $options['mailchimp_api'] );
+							$signals_connect 	= new Signals_MailChimp( $options['mailchimp_api'] );
 							$signals_response 	= $signals_connect->call( 'lists/subscribe', array(
 								'id'            => $options['mailchimp_list'],
 								'email'         => array( 'email' => $signals_email ),
@@ -77,17 +78,17 @@
 							// Showing message as per the response from the mailchimp server
 							if ( isset( $signals_response['code'] ) && 214 !== $signals_response['code'] ) {
 								$code 		= 'danger';
-								$response 	= __( 'Oops! Something went wrong.', 'signals' );
+								$response 	= $options['message_wrong'];
 							} elseif ( isset( $signals_response['code'] ) && 214 === $signals_response['code'] ) {
 								$code 		= 'success';
-								$response 	= __( 'You are already subscribed!', 'signals' );
+								$response 	= $options['message_subscribed'];
 							} else {
 								$code 		= 'success';
-								$response 	= __( 'Thank you! We\'ll be in touch!', 'signals' );
+								$response 	= $options['message_done'];
 							}
 						} else {
 							$code 			= 'danger';
-							$response 		= __( 'Please provide a valid email address.', 'signals' );
+							$response 		= $options['message_noemail'];
 						}
 					}
 				} // signals_email
@@ -116,8 +117,7 @@
 
 	?>
 
-
-	<!-- Maintenance Mode Plugin by 69signals (http://www.69signals.com) -->
-	<!-- We are a creative digital agency. We love to weave the web, simple but amazing. We create flawless web and mobile applications. -->
+<!-- Maintenance Mode Plugin by 69signals (http://www.69signals.com) -->
+<!-- We are a creative digital marketplace. We love to weave the web, simple but amazing. We create flawless web and mobile applications. -->
 </body>
 </html>

@@ -10,12 +10,11 @@
  * @version 1.0
  */
 
-class MailChimp {
+class Signals_MailChimp {
 
     private $api_key;
     private $api_endpoint = 'https://<dc>.api.mailchimp.com/2.0/';
     private $verify_ssl   = false;
-
 
 
     /**
@@ -35,8 +34,6 @@ class MailChimp {
     }
 
 
-
-
     /**
      * Call an API method. Every request needs the API key, so that is added automatically -- you don't need to pass it in.
      * @param  string $method The API method to call, e.g. 'lists/list'
@@ -49,8 +46,6 @@ class MailChimp {
         return $this->_raw_request( $method, $args );
 
     }
-
-
 
 
     /**

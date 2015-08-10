@@ -133,13 +133,13 @@
 					<label for="signals_csmm_header_font" class="signals-strong"><?php _e( 'Header Font', 'signals' ); ?></label>
 
 					<select name="signals_csmm_header_font" id="signals_csmm_header_font" class="signals-google-fonts">
-						<option value="Arial"<?php selected( 'Arial', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Arial', 'signals' ); ?></option>
-						<option value="Helvetica"<?php selected( 'Helvetica', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Helvetica', 'signals' ); ?></option>
-						<option value="Georgia"<?php selected( 'Georgia', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Georgia', 'signals' ); ?></option>
-						<option value="Times New Roman"<?php selected( 'Times New Roman', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Times New Roman', 'signals' ); ?></option>
-						<option value="Tahoma"<?php selected( 'Tahoma', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Tahoma', 'signals' ); ?></option>
-						<option value="Verdana"<?php selected( 'Verdana', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Verdana', 'signals' ); ?></option>
-						<option value="Geneva"<?php selected( 'Geneva', $signals_csmm_options['header_font'] ); ?>><?php _e( 'Geneva', 'signals' ); ?></option>
+						<option value="Arial"<?php selected( 'Arial', $signals_csmm_options['header_font'] ); ?>>Arial</option>
+						<option value="Helvetica"<?php selected( 'Helvetica', $signals_csmm_options['header_font'] ); ?>>Helvetica</option>
+						<option value="Georgia"<?php selected( 'Georgia', $signals_csmm_options['header_font'] ); ?>>Georgia</option>
+						<option value="Times New Roman"<?php selected( 'Times New Roman', $signals_csmm_options['header_font'] ); ?>>Times New Roman</option>
+						<option value="Tahoma"<?php selected( 'Tahoma', $signals_csmm_options['header_font'] ); ?>>Tahoma</option>
+						<option value="Verdana"<?php selected( 'Verdana', $signals_csmm_options['header_font'] ); ?>>Verdana</option>
+						<option value="Geneva"<?php selected( 'Geneva', $signals_csmm_options['header_font'] ); ?>>Geneva</option>
 						<option disabled>-- via google --</option>
 						<?php
 
@@ -159,13 +159,13 @@
 					<label for="signals_csmm_secondary_font" class="signals-strong"><?php _e( 'Secondary Font', 'signals' ); ?></label>
 
 					<select name="signals_csmm_secondary_font" id="signals_csmm_secondary_font" class="signals-google-fonts">
-						<option value="Arial"<?php selected( 'Arial', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Arial', 'signals' ); ?></option>
-						<option value="Helvetica"<?php selected( 'Helvetica', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Helvetica', 'signals' ); ?></option>
-						<option value="Georgia"<?php selected( 'Georgia', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Georgia', 'signals' ); ?></option>
-						<option value="Times New Roman"<?php selected( 'Times New Roman', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Times New Roman', 'signals' ); ?></option>
-						<option value="Tahoma"<?php selected( 'Tahoma', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Tahoma', 'signals' ); ?></option>
-						<option value="Verdana"<?php selected( 'Verdana', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Verdana', 'signals' ); ?></option>
-						<option value="Geneva"<?php selected( 'Geneva', $signals_csmm_options['secondary_font'] ); ?>><?php _e( 'Geneva', 'signals' ); ?></option>
+						<option value="Arial"<?php selected( 'Arial', $signals_csmm_options['secondary_font'] ); ?>>Arial</option>
+						<option value="Helvetica"<?php selected( 'Helvetica', $signals_csmm_options['secondary_font'] ); ?>>Helvetica</option>
+						<option value="Georgia"<?php selected( 'Georgia', $signals_csmm_options['secondary_font'] ); ?>>Georgia</option>
+						<option value="Times New Roman"<?php selected( 'Times New Roman', $signals_csmm_options['secondary_font'] ); ?>>Times New Roman</option>
+						<option value="Tahoma"<?php selected( 'Tahoma', $signals_csmm_options['secondary_font'] ); ?>>Tahoma</option>
+						<option value="Verdana"<?php selected( 'Verdana', $signals_csmm_options['secondary_font'] ); ?>>Verdana</option>
+						<option value="Geneva"<?php selected( 'Geneva', $signals_csmm_options['secondary_font'] ); ?>>Geneva</option>
 						<option disabled>-- via google --</option>
 						<?php
 

@@ -123,22 +123,23 @@ a:focus {
 }
 .logo {
 	display: inline-block;
-	margin-bottom: 30px;
+	margin: 15px 0;
 }
 .header-text {
 	font-size: 28px;
 	line-height: 1.4;
-	margin-bottom: 20px;
+	margin: 15px 0;
 }
 .secondary-text {
 	font-size: 14px;
+	margin: 15px 0;
 }
 .subscription {
-	margin-top: 30px;
+	margin: 15px 0;
 }
 .anti-spam {
 	font-size: 11px;
-	margin-top: 15px;
+	margin-top: 10px;
 	color: #bbbbbb;
 }
 @media (max-width: 767px) {
@@ -153,24 +154,14 @@ a:focus {
  */
 
 .signals-alert {
-	color: #ce8f22;
-	background-color: #fffcee;
-	background-image: none;
-	box-shadow: none;
-	text-shadow: none;
+	color: #ffffff;
 	font-size: 14px;
 	padding: 5px 19px 5px 10px;
 	margin-bottom: 10px;
 }
 .signals-alert-success {
-	color: #438a85;
-	background-color: #f3faf8;
-}
-.signals-alert-info {
-	color: #246a8e;
-	background-color: #ebf6fb;
+	background-color: #90c695;
 }
 .signals-alert-danger {
-	color: #e76e70;
-	background-color: #fff6f4;
+	background-color: #e08283;
 }

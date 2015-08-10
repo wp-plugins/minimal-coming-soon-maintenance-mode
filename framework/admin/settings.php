@@ -82,52 +82,57 @@ function csmm_admin_settings() {
 			'status'				=> $tmp_options['status'],
 			'title' 				=> strip_tags( $_POST['signals_csmm_title'] ),
 			'header_text' 			=> strip_tags( $_POST['signals_csmm_header'] ),
-			'secondary_text' 		=> $_POST['signals_csmm_secondary'],
+			'secondary_text' 		=> strip_tags( $_POST['signals_csmm_secondary'] ),
 			'antispam_text' 		=> strip_tags( $_POST['signals_csmm_antispam'] ),
 			'custom_login_url' 		=> strip_tags( $_POST['signals_csmm_custom_login'] ),
 			'show_logged_in' 		=> $tmp_options['logged'],
 			'exclude_se'			=> $tmp_options['exclude_se'],
+			'arrange' 				=> strip_tags( $_POST['signals_csmm_arrange'] ),
+			'analytics' 			=> $_POST['signals_csmm_analytics'],
+
 			'mailchimp_api'			=> strip_tags( $_POST['signals_csmm_api'] ),
 			'mailchimp_list' 		=> $tmp_options['list'],
+			'message_noemail' 		=> strip_tags( $_POST['signals_csmm_message_noemail'] ),
+			'message_subscribed' 	=> strip_tags( $_POST['signals_csmm_message_subscribed'] ),
+			'message_wrong' 		=> strip_tags( $_POST['signals_csmm_message_wrong'] ),
+			'message_done' 			=> strip_tags( $_POST['signals_csmm_message_done'] ),
+
 			'logo'					=> strip_tags( $_POST['signals_csmm_logo'] ),
 			'favicon'				=> strip_tags( $_POST['signals_csmm_favicon'] ),
-
 			'bg_cover' 				=> strip_tags( $_POST['signals_csmm_bg'] ),
 			'content_overlay' 		=> $tmp_options['overlay'],
 			'content_width'			=> absint( $_POST['signals_csmm_width'] ),
 			'bg_color' 				=> strip_tags( $_POST['signals_csmm_color'] ),
 			'content_position'		=> strip_tags( $_POST['signals_csmm_position'] ),
 			'content_alignment'		=> strip_tags( $_POST['signals_csmm_alignment'] ),
-
 			'header_font' 			=> strip_tags( $_POST['signals_csmm_header_font'] ),
 			'secondary_font' 		=> strip_tags( $_POST['signals_csmm_secondary_font'] ),
 			'header_font_size' 		=> strip_tags( $_POST['signals_csmm_header_size'] ),
 			'secondary_font_size' 	=> strip_tags( $_POST['signals_csmm_secondary_size'] ),
 			'header_font_color' 	=> strip_tags( $_POST['signals_csmm_header_color'] ),
 			'secondary_font_color' 	=> strip_tags( $_POST['signals_csmm_secondary_color'] ),
-
 			'antispam_font_size' 	=> strip_tags( $_POST['signals_csmm_antispam_size'] ),
 			'antispam_font_color' 	=> strip_tags( $_POST['signals_csmm_antispam_color'] ),
 
 			'input_text' 			=> strip_tags( $_POST['signals_csmm_input_text'] ),
 			'button_text' 			=> strip_tags( $_POST['signals_csmm_button_text'] ),
-
 			'ignore_form_styles' 	=> $tmp_options['form_styles'],
-
 			'input_font_size'		=> strip_tags( $_POST['signals_csmm_input_size'] ),
 			'button_font_size'		=> strip_tags( $_POST['signals_csmm_button_size'] ),
 			'input_font_color'		=> strip_tags( $_POST['signals_csmm_input_color'] ),
 			'button_font_color'		=> strip_tags( $_POST['signals_csmm_button_color'] ),
-
 			'input_bg'				=> strip_tags( $_POST['signals_csmm_input_bg'] ),
 			'button_bg'				=> strip_tags( $_POST['signals_csmm_button_bg'] ),
 			'input_bg_hover'		=> strip_tags( $_POST['signals_csmm_input_bg_hover'] ),
 			'button_bg_hover'		=> strip_tags( $_POST['signals_csmm_button_bg_hover'] ),
-
 			'input_border'			=> strip_tags( $_POST['signals_csmm_input_border'] ),
 			'button_border'			=> strip_tags( $_POST['signals_csmm_button_border'] ),
 			'input_border_hover'	=> strip_tags( $_POST['signals_csmm_input_border_hover'] ),
 			'button_border_hover'	=> strip_tags( $_POST['signals_csmm_button_border_hover'] ),
+			'success_background'	=> strip_tags( $_POST['signals_csmm_success_bg'] ),
+			'success_color'			=> strip_tags( $_POST['signals_csmm_success_color'] ),
+			'error_background'		=> strip_tags( $_POST['signals_csmm_error_bg'] ),
+			'error_color'			=> strip_tags( $_POST['signals_csmm_error_color'] ),
 
 			'disable_settings' 		=> $tmp_options['disabled'],
 			'custom_html'			=> $_POST['signals_csmm_html'], // Not sanitizing the HTML and CSS provided by the admin

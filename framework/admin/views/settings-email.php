@@ -31,7 +31,7 @@
 					// Checking if the API key is present in the database
 					if ( ! empty( $signals_csmm_options['mailchimp_api'] ) ) {
 						// Grabbing lists using the MailChimp API
-						$signals_api 	= new MailChimp( $signals_csmm_options['mailchimp_api'] );
+						$signals_api 	= new Signals_MailChimp( $signals_csmm_options['mailchimp_api'] );
 						$signals_lists 	= $signals_api->call( 'lists/list',
 							array (
 		                		'apikey' => $signals_csmm_options['mailchimp_api']
@@ -57,6 +57,38 @@
 					}
 
 				?>
+			</div>
+
+			<div class="signals-double-group signals-clearfix">
+				<div class="signals-form-group">
+					<label for="signals_csmm_message_noemail" class="signals-strong"><?php _e( 'Message: No Email', 'signals' ); ?></label>
+					<input type="text" name="signals_csmm_message_noemail" id="signals_csmm_message_noemail" value="<?php echo esc_attr_e( $signals_csmm_options['message_noemail'] ); ?>" placeholder="<?php esc_attr_e( 'Message when email is not provided', 'signals' ); ?>" class="signals-form-control">
+
+					<p class="signals-form-help-block"><?php _e( 'Provide error message to show if the user forgets to provide email address.', 'signals' ); ?></p>
+				</div>
+
+				<div class="signals-form-group">
+					<label for="signals_csmm_message_subscribed" class="signals-strong"><?php _e( 'Message: Already Subscribed', 'signals' ); ?></label>
+					<input type="text" name="signals_csmm_message_subscribed" id="signals_csmm_message_subscribed" value="<?php echo esc_attr_e( $signals_csmm_options['message_subscribed'] ); ?>" placeholder="<?php esc_attr_e( 'Message when user is already subscribed', 'signals' ); ?>" class="signals-form-control">
+
+					<p class="signals-form-help-block"><?php _e( 'Provide message to show if the user is already subscribed to the mailing list.', 'signals' ); ?></p>
+				</div>
+			</div>
+
+			<div class="signals-double-group signals-clearfix">
+				<div class="signals-form-group">
+					<label for="signals_csmm_message_wrong" class="signals-strong"><?php _e( 'Message: General Error', 'signals' ); ?></label>
+					<input type="text" name="signals_csmm_message_wrong" id="signals_csmm_message_wrong" value="<?php echo esc_attr_e( $signals_csmm_options['message_wrong'] ); ?>" placeholder="<?php esc_attr_e( 'Message when anything goes wrong while subscribing', 'signals' ); ?>" class="signals-form-control">
+
+					<p class="signals-form-help-block"><?php _e( 'Provide general error message to show if anything goes wrong while subscribing.', 'signals' ); ?></p>
+				</div>
+
+				<div class="signals-form-group">
+					<label for="signals_csmm_message_done" class="signals-strong"><?php _e( 'Message: Successfully Subscribed', 'signals' ); ?></label>
+					<input type="text" name="signals_csmm_message_done" id="signals_csmm_message_done" value="<?php echo esc_attr_e( $signals_csmm_options['message_done'] ); ?>" placeholder="<?php esc_attr_e( 'Success message when the user gets subscribed', 'signals' ); ?>" class="signals-form-control">
+
+					<p class="signals-form-help-block"><?php _e( 'Provide message to show when the user gets subscribed successfully.', 'signals' ); ?></p>
+				</div>
 			</div>
 		</div>
 	</div>

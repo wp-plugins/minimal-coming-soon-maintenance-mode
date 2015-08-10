@@ -154,6 +154,38 @@
 					<p class="signals-form-help-block"><?php _e( 'Select border color for the button on mouse hover.', 'signals' ); ?></p>
 				</div>
 			</div>
+
+			<div class="signals-double-group signals-clearfix">
+				<div class="signals-form-group">
+					<label for="signals_csmm_success_bg" class="signals-strong"><?php _e( 'Success Message Background Color', 'signals' ); ?></span></label>
+					<input type="text" name="signals_csmm_success_bg" id="signals_csmm_success_bg" value="<?php esc_attr_e( $signals_csmm_options['success_background'] ); ?>" placeholder="<?php _e( 'Background color for the success message', 'signals' ); ?>" class="signals-form-control color {required:false}">
+
+					<p class="signals-form-help-block"><?php _e( 'Select background color for the success message.', 'signals' ); ?></p>
+				</div>
+
+				<div class="signals-form-group">
+					<label for="signals_csmm_success_color" class="signals-strong"><?php _e( 'Success Message Text Color', 'signals' ); ?> <span class="signals-red-color"></span></label>
+					<input type="text" name="signals_csmm_success_color" id="signals_csmm_success_color" value="<?php esc_attr_e( $signals_csmm_options['success_color'] ); ?>" placeholder="<?php _e( 'Text color for the success message', 'signals' ); ?>" class="signals-form-control color {required:false}">
+
+					<p class="signals-form-help-block"><?php _e( 'Select text color for the success message.', 'signals' ); ?></p>
+				</div>
+			</div>
+
+			<div class="signals-double-group signals-clearfix">
+				<div class="signals-form-group">
+					<label for="signals_csmm_error_bg" class="signals-strong"><?php _e( 'Error Message Background Color', 'signals' ); ?></span></label>
+					<input type="text" name="signals_csmm_error_bg" id="signals_csmm_error_bg" value="<?php esc_attr_e( $signals_csmm_options['error_background'] ); ?>" placeholder="<?php _e( 'Background color for the error message', 'signals' ); ?>" class="signals-form-control color {required:false}">
+
+					<p class="signals-form-help-block"><?php _e( 'Select background color for the error message.', 'signals' ); ?></p>
+				</div>
+
+				<div class="signals-form-group">
+					<label for="signals_csmm_error_color" class="signals-strong"><?php _e( 'Error Message Text Color', 'signals' ); ?> <span class="signals-red-color"></span></label>
+					<input type="text" name="signals_csmm_error_color" id="signals_csmm_error_color" value="<?php esc_attr_e( $signals_csmm_options['error_color'] ); ?>" placeholder="<?php _e( 'Text color for the error message', 'signals' ); ?>" class="signals-form-control color {required:false}">
+
+					<p class="signals-form-help-block"><?php _e( 'Select text color for the error message.', 'signals' ); ?></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div><!-- #form -->
